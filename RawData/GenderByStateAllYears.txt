@@ -1,0 +1,228 @@
+"Notes"	"State"	"State Code"	"Gender"	"Gender Code"	Deaths	Population	Crude Rate
+	"Alabama"	"01"	"Female"	"F"	3127	40817084	7.7
+	"Alabama"	"01"	"Male"	"M"	4173	38336447	10.9
+"Total"	"Alabama"	"01"			7300	79153531	9.2
+	"Alaska"	"02"	"Female"	"F"	638	5576479	11.4
+	"Alaska"	"02"	"Male"	"M"	897	6042575	14.8
+"Total"	"Alaska"	"02"			1535	11619054	13.2
+	"Arizona"	"04"	"Female"	"F"	5735	51357896	11.2
+	"Arizona"	"04"	"Male"	"M"	9164	50902424	18.0
+"Total"	"Arizona"	"04"			14899	102260320	14.6
+	"Arkansas"	"05"	"Female"	"F"	2009	24540426	8.2
+	"Arkansas"	"05"	"Male"	"M"	2591	23586713	11.0
+"Total"	"Arkansas"	"05"			4600	48127139	9.6
+	"California"	"06"	"Female"	"F"	21864	310765448	7.0
+	"California"	"06"	"Male"	"M"	36725	307716599	11.9
+"Total"	"California"	"06"			58589	618482047	9.5
+	"Colorado"	"08"	"Female"	"F"	4452	40807583	10.9
+	"Colorado"	"08"	"Male"	"M"	6346	41172019	15.4
+"Total"	"Colorado"	"08"			10798	81979602	13.2
+	"Connecticut"	"09"	"Female"	"F"	2206	30749290	7.2
+	"Connecticut"	"09"	"Male"	"M"	4749	29102558	16.3
+"Total"	"Connecticut"	"09"			6955	59851848	11.6
+	"Delaware"	"10"	"Female"	"F"	708	7568461	9.4
+	"Delaware"	"10"	"Male"	"M"	1165	7122032	16.4
+"Total"	"Delaware"	"10"			1873	14690493	12.7
+	"District of Columbia"	"11"	"Female"	"F"	428	5350921	8.0
+	"District of Columbia"	"11"	"Male"	"M"	896	4789566	18.7
+"Total"	"District of Columbia"	"11"			1324	10140487	13.1
+	"Florida"	"12"	"Female"	"F"	15072	157296044	9.6
+	"Florida"	"12"	"Male"	"M"	25246	150362162	16.8
+"Total"	"Florida"	"12"			40318	307658206	13.1
+	"Georgia"	"13"	"Female"	"F"	5780	80032070	7.2
+	"Georgia"	"13"	"Male"	"M"	8216	76762277	10.7
+"Total"	"Georgia"	"13"			13996	156794347	8.9
+	"Hawaii"	"15"	"Female"	"F"	628	11139975	5.6
+	"Hawaii"	"15"	"Male"	"M"	1421	11251853	12.6
+"Total"	"Hawaii"	"15"			2049	22391828	9.2
+	"Idaho"	"16"	"Female"	"F"	1154	12534222	9.2
+	"Idaho"	"16"	"Male"	"M"	1226	12591520	9.7
+"Total"	"Idaho"	"16"			2380	25125742	9.5
+	"Illinois"	"17"	"Female"	"F"	6622	109883470	6.0
+	"Illinois"	"17"	"Male"	"M"	14323	105746017	13.5
+"Total"	"Illinois"	"17"			20945	215629487	9.7
+	"Indiana"	"18"	"Female"	"F"	4722	54915764	8.6
+	"Indiana"	"18"	"Male"	"M"	7328	53123572	13.8
+"Total"	"Indiana"	"18"			12050	108039336	11.2
+	"Iowa"	"19"	"Female"	"F"	1287	25871605	5.0
+	"Iowa"	"19"	"Male"	"M"	1708	25234423	6.8
+"Total"	"Iowa"	"19"			2995	51106028	5.9
+	"Kansas"	"20"	"Female"	"F"	1736	23945573	7.2
+	"Kansas"	"20"	"Male"	"M"	2251	23546932	9.6
+"Total"	"Kansas"	"20"			3987	47492505	8.4
+	"Kentucky"	"21"	"Female"	"F"	4693	36685684	12.8
+	"Kentucky"	"21"	"Male"	"M"	7600	35384003	21.5
+"Total"	"Kentucky"	"21"			12293	72069687	17.1
+	"Louisiana"	"22"	"Female"	"F"	3492	39380356	8.9
+	"Louisiana"	"22"	"Male"	"M"	6169	37435932	16.5
+"Total"	"Louisiana"	"22"			9661	76816288	12.6
+	"Maine"	"23"	"Female"	"F"	933	11426117	8.2
+	"Maine"	"23"	"Male"	"M"	1584	10920472	14.5
+"Total"	"Maine"	"23"			2517	22346589	11.3
+	"Maryland"	"24"	"Female"	"F"	4082	49633215	8.2
+	"Maryland"	"24"	"Male"	"M"	8871	46462597	19.1
+"Total"	"Maryland"	"24"			12953	96095812	13.5
+	"Massachusetts"	"25"	"Female"	"F"	4584	57106665	8.0
+	"Massachusetts"	"25"	"Male"	"M"	9940	53454939	18.6
+"Total"	"Massachusetts"	"25"			14524	110561604	13.1
+	"Michigan"	"26"	"Female"	"F"	7644	86174039	8.9
+	"Michigan"	"26"	"Male"	"M"	11530	83073062	13.9
+"Total"	"Michigan"	"26"			19174	169247101	11.3
+	"Minnesota"	"27"	"Female"	"F"	2268	44509511	5.1
+	"Minnesota"	"27"	"Male"	"M"	3512	43840114	8.0
+"Total"	"Minnesota"	"27"			5780	88349625	6.5
+	"Mississippi"	"28"	"Female"	"F"	1824	25604896	7.1
+	"Mississippi"	"28"	"Male"	"M"	2539	24091372	10.5
+"Total"	"Mississippi"	"28"			4363	49696268	8.8
+	"Missouri"	"29"	"Female"	"F"	4680	50896041	9.2
+	"Missouri"	"29"	"Male"	"M"	7289	48652884	15.0
+"Total"	"Missouri"	"29"			11969	99548925	12.0
+	"Montana"	"30"	"Female"	"F"	814	8160776	10.0
+	"Montana"	"30"	"Male"	"M"	934	8189538	11.4
+"Total"	"Montana"	"30"			1748	16350314	10.7
+	"Nebraska"	"31"	"Female"	"F"	735	15361506	4.8
+	"Nebraska"	"31"	"Male"	"M"	772	15088069	5.1
+"Total"	"Nebraska"	"31"			1507	30449575	4.9
+	"Nevada"	"32"	"Female"	"F"	3195	20950798	15.3
+	"Nevada"	"32"	"Male"	"M"	4586	21446491	21.4
+"Total"	"Nevada"	"32"			7781	42397289	18.4
+	"New Hampshire"	"33"	"Female"	"F"	996	11169041	8.9
+	"New Hampshire"	"33"	"Male"	"M"	1780	10871017	16.4
+"Total"	"New Hampshire"	"33"			2776	22040058	12.6
+	"New Jersey"	"34"	"Female"	"F"	4295	75865324	5.7
+	"New Jersey"	"34"	"Male"	"M"	10027	71921291	13.9
+"Total"	"New Jersey"	"34"			14322	147786615	9.7
+	"New Mexico"	"35"	"Female"	"F"	2472	16965660	14.6
+	"New Mexico"	"35"	"Male"	"M"	4405	16544703	26.6
+"Total"	"New Mexico"	"35"			6877	33510363	20.5
+	"New York"	"36"	"Female"	"F"	8010	169325749	4.7
+	"New York"	"36"	"Male"	"M"	17697	158597360	11.2
+"Total"	"New York"	"36"			25707	327923109	7.8
+	"North Carolina"	"37"	"Female"	"F"	6722	78751767	8.5
+	"North Carolina"	"37"	"Male"	"M"	10042	75037395	13.4
+"Total"	"North Carolina"	"37"			16764	153789162	10.9
+	"North Dakota"	"38"	"Female"	"F"	162	5643202	2.9
+	"North Dakota"	"38"	"Male"	"M"	240	5750832	4.2
+"Total"	"North Dakota"	"38"			402	11394034	3.5
+	"Ohio"	"39"	"Female"	"F"	9619	100050249	9.6
+	"Ohio"	"39"	"Male"	"M"	16403	95214039	17.2
+"Total"	"Ohio"	"39"			26022	195264288	13.3
+	"Oklahoma"	"40"	"Female"	"F"	3977	31388737	12.7
+	"Oklahoma"	"40"	"Male"	"M"	5208	30646589	17.0
+"Total"	"Oklahoma"	"40"			9185	62035326	14.8
+	"Oregon"	"41"	"Female"	"F"	2854	31814480	9.0
+	"Oregon"	"41"	"Male"	"M"	4064	31214477	13.0
+"Total"	"Oregon"	"41"			6918	63028957	11.0
+	"Pennsylvania"	"42"	"Female"	"F"	10269	109618777	9.4
+	"Pennsylvania"	"42"	"Male"	"M"	20276	103717656	19.5
+"Total"	"Pennsylvania"	"42"			30545	213336433	14.3
+	"Rhode Island"	"44"	"Female"	"F"	900	9298919	9.7
+	"Rhode Island"	"44"	"Male"	"M"	1811	8672979	20.9
+"Total"	"Rhode Island"	"44"			2711	17971898	15.1
+	"South Carolina"	"45"	"Female"	"F"	3514	38655223	9.1
+	"South Carolina"	"45"	"Male"	"M"	4550	36588238	12.4
+"Total"	"South Carolina"	"45"			8064	75243461	10.7
+	"South Dakota"	"46"	"Female"	"F"	319	6778082	4.7
+	"South Dakota"	"46"	"Male"	"M"	350	6763768	5.2
+"Total"	"South Dakota"	"46"			669	13541850	4.9
+	"Tennessee"	"47"	"Female"	"F"	6285	53464137	11.8
+	"Tennessee"	"47"	"Male"	"M"	8502	50829490	16.7
+"Total"	"Tennessee"	"47"			14787	104293627	14.2
+	"Texas"	"48"	"Female"	"F"	13008	204305726	6.4
+	"Texas"	"48"	"Male"	"M"	20881	201373411	10.4
+"Total"	"Texas"	"48"			33889	405679137	8.4
+	"Utah"	"49"	"Female"	"F"	2974	21932072	13.6
+	"Utah"	"49"	"Male"	"M"	4279	22118335	19.3
+"Total"	"Utah"	"49"			7253	44050407	16.5
+	"Vermont"	"50"	"Female"	"F"	390	5360032	7.3
+	"Vermont"	"50"	"Male"	"M"	676	5192894	13.0
+"Total"	"Vermont"	"50"			1066	10552926	10.1
+	"Virginia"	"51"	"Female"	"F"	4165	66921737	6.2
+	"Virginia"	"51"	"Male"	"M"	6766	64499184	10.5
+"Total"	"Virginia"	"51"			10931	131420921	8.3
+	"Washington"	"53"	"Female"	"F"	5709	55194406	10.3
+	"Washington"	"53"	"Male"	"M"	8490	54837289	15.5
+"Total"	"Washington"	"53"			14199	110031695	12.9
+	"West Virginia"	"54"	"Female"	"F"	2374	15852558	15.0
+	"West Virginia"	"54"	"Male"	"M"	4048	15286283	26.5
+"Total"	"West Virginia"	"54"			6422	31138841	20.6
+	"Wisconsin"	"55"	"Female"	"F"	3662	47902506	7.6
+	"Wisconsin"	"55"	"Male"	"M"	5659	47080682	12.0
+"Total"	"Wisconsin"	"55"			9321	94983188	9.8
+	"Wyoming"	"56"	"Female"	"F"	467	4494981	10.4
+	"Wyoming"	"56"	"Male"	"M"	536	4636522	11.6
+"Total"	"Wyoming"	"56"			1003	9131503	11.0
+"Total"					560696	5112618876	11.0
+"---"
+"Dataset: Underlying Cause of Death, 1999-2015"
+"Query Parameters:"
+"Title:"
+"2013 Urbanization: All"
+"Autopsy: All"
+"Five-Year Age Groups: All"
+"Gender: All"
+"Hispanic Origin: All"
+"ICD-10 Codes: X41 (Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic"
+"drugs, not elsewhere classified), X42 (Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens],"
+"not elsewhere classified), X43 (Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system), X44"
+"(Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X61 (Intentional"
+"self-poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere"
+"classified), X62 (Intentional self-poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere"
+"classified), X63 (Intentional self-poisoning by and exposure to other drugs acting on the autonomic nervous system), X64"
+"(Intentional self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X85 (Assault"
+"by drugs, medicaments and biological substances), Y11 (Poisoning by and exposure to antiepileptic, sedative-hypnotic,"
+"antiparkinsonism and psychotropic drugs, not elsewhere classified, undetermined intent), Y12 (Poisoning by and exposure to"
+"narcotics and psychodysleptics [hallucinogens], not elsewhere classified, undetermined intent), Y13 (Poisoning by and exposure"
+"to other drugs acting on the autonomic nervous system, undetermined intent), Y14 (Poisoning by and exposure to other and"
+"unspecified drugs, medicaments and biological substances, undetermined intent)"
+"Place of Death: All"
+"Race: All"
+"States: All"
+"Weekday: All"
+"Year/Month: All"
+"Group By: State, Gender"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Nov 4, 2017 6:12:39 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2015 on CDC WONDER Online Database, released December, 2016. Data are from the Multiple Cause of Death Files, 1999-2015, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Nov 4, 2017 6:12:39 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015"
+"postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for"
+"year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS"
+"on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012."
+"Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates"
+"of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26,"
+"2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal"
+"series of July 1 estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates"
+"and population figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population"
+"estimates which were available at the time of release."
+"6. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
+"7. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."
