@@ -1,0 +1,478 @@
+"Notes"	"State"	"State Code"	"Weekday"	"Weekday Code"	Deaths	Population	Crude Rate
+	"Alabama"	"01"	"Sunday"	"1"	1165	Not Applicable	Not Applicable
+	"Alabama"	"01"	"Monday"	"2"	917	Not Applicable	Not Applicable
+	"Alabama"	"01"	"Tuesday"	"3"	944	Not Applicable	Not Applicable
+	"Alabama"	"01"	"Wednesday"	"4"	916	Not Applicable	Not Applicable
+	"Alabama"	"01"	"Thursday"	"5"	1036	Not Applicable	Not Applicable
+	"Alabama"	"01"	"Friday"	"6"	1192	Not Applicable	Not Applicable
+	"Alabama"	"01"	"Saturday"	"7"	1250	Not Applicable	Not Applicable
+	"Alabama"	"01"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Sunday"	"1"	229	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Monday"	"2"	206	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Tuesday"	"3"	213	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Wednesday"	"4"	219	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Thursday"	"5"	216	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Friday"	"6"	214	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Saturday"	"7"	267	Not Applicable	Not Applicable
+	"Alaska"	"02"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Sunday"	"1"	2325	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Monday"	"2"	2143	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Tuesday"	"3"	2037	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Wednesday"	"4"	1988	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Thursday"	"5"	2104	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Friday"	"6"	2100	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Saturday"	"7"	2383	Not Applicable	Not Applicable
+	"Arizona"	"04"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Sunday"	"1"	767	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Monday"	"2"	580	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Tuesday"	"3"	632	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Wednesday"	"4"	622	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Thursday"	"5"	645	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Friday"	"6"	723	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Saturday"	"7"	711	Not Applicable	Not Applicable
+	"Arkansas"	"05"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"California"	"06"	"Sunday"	"1"	8762	Not Applicable	Not Applicable
+	"California"	"06"	"Monday"	"2"	8471	Not Applicable	Not Applicable
+	"California"	"06"	"Tuesday"	"3"	8255	Not Applicable	Not Applicable
+	"California"	"06"	"Wednesday"	"4"	8224	Not Applicable	Not Applicable
+	"California"	"06"	"Thursday"	"5"	8183	Not Applicable	Not Applicable
+	"California"	"06"	"Friday"	"6"	8588	Not Applicable	Not Applicable
+	"California"	"06"	"Saturday"	"7"	8944	Not Applicable	Not Applicable
+	"California"	"06"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Sunday"	"1"	1736	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Monday"	"2"	1564	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Tuesday"	"3"	1489	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Wednesday"	"4"	1462	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Thursday"	"5"	1502	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Friday"	"6"	1493	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Saturday"	"7"	1739	Not Applicable	Not Applicable
+	"Colorado"	"08"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Sunday"	"1"	1016	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Monday"	"2"	972	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Tuesday"	"3"	919	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Wednesday"	"4"	932	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Thursday"	"5"	964	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Friday"	"6"	1047	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Saturday"	"7"	1203	Not Applicable	Not Applicable
+	"Connecticut"	"09"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Sunday"	"1"	287	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Monday"	"2"	221	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Tuesday"	"3"	252	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Wednesday"	"4"	238	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Thursday"	"5"	271	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Friday"	"6"	298	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Saturday"	"7"	322	Not Applicable	Not Applicable
+	"Delaware"	"10"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Sunday"	"1"	177	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Monday"	"2"	179	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Tuesday"	"3"	188	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Wednesday"	"4"	171	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Thursday"	"5"	199	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Friday"	"6"	214	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Saturday"	"7"	225	Not Applicable	Not Applicable
+	"District of Columbia"	"11"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Florida"	"12"	"Sunday"	"1"	6235	Not Applicable	Not Applicable
+	"Florida"	"12"	"Monday"	"2"	5529	Not Applicable	Not Applicable
+	"Florida"	"12"	"Tuesday"	"3"	5326	Not Applicable	Not Applicable
+	"Florida"	"12"	"Wednesday"	"4"	5440	Not Applicable	Not Applicable
+	"Florida"	"12"	"Thursday"	"5"	5583	Not Applicable	Not Applicable
+	"Florida"	"12"	"Friday"	"6"	6021	Not Applicable	Not Applicable
+	"Florida"	"12"	"Saturday"	"7"	6736	Not Applicable	Not Applicable
+	"Florida"	"12"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Sunday"	"1"	2206	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Monday"	"2"	1898	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Tuesday"	"3"	1898	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Wednesday"	"4"	1875	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Thursday"	"5"	1909	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Friday"	"6"	2016	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Saturday"	"7"	2398	Not Applicable	Not Applicable
+	"Georgia"	"13"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Sunday"	"1"	342	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Monday"	"2"	291	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Tuesday"	"3"	297	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Wednesday"	"4"	276	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Thursday"	"5"	266	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Friday"	"6"	321	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Saturday"	"7"	276	Not Applicable	Not Applicable
+	"Hawaii"	"15"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Sunday"	"1"	349	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Monday"	"2"	314	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Tuesday"	"3"	327	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Wednesday"	"4"	354	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Thursday"	"5"	316	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Friday"	"6"	349	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Saturday"	"7"	405	Not Applicable	Not Applicable
+	"Idaho"	"16"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Sunday"	"1"	3304	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Monday"	"2"	2804	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Tuesday"	"3"	2843	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Wednesday"	"4"	2764	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Thursday"	"5"	2925	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Friday"	"6"	3040	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Saturday"	"7"	3578	Not Applicable	Not Applicable
+	"Illinois"	"17"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Sunday"	"1"	1917	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Monday"	"2"	1506	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Tuesday"	"3"	1610	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Wednesday"	"4"	1675	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Thursday"	"5"	1690	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Friday"	"6"	1771	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Saturday"	"7"	2035	Not Applicable	Not Applicable
+	"Indiana"	"18"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Sunday"	"1"	460	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Monday"	"2"	440	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Tuesday"	"3"	418	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Wednesday"	"4"	439	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Thursday"	"5"	430	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Friday"	"6"	430	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Saturday"	"7"	462	Not Applicable	Not Applicable
+	"Iowa"	"19"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Sunday"	"1"	626	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Monday"	"2"	537	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Tuesday"	"3"	556	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Wednesday"	"4"	581	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Thursday"	"5"	545	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Friday"	"6"	583	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Saturday"	"7"	634	Not Applicable	Not Applicable
+	"Kansas"	"20"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Sunday"	"1"	1962	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Monday"	"2"	1504	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Tuesday"	"3"	1477	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Wednesday"	"4"	1579	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Thursday"	"5"	1767	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Friday"	"6"	1908	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Saturday"	"7"	2217	Not Applicable	Not Applicable
+	"Kentucky"	"21"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Sunday"	"1"	1520	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Monday"	"2"	1252	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Tuesday"	"3"	1271	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Wednesday"	"4"	1228	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Thursday"	"5"	1351	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Friday"	"6"	1428	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Saturday"	"7"	1701	Not Applicable	Not Applicable
+	"Louisiana"	"22"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Maine"	"23"	"Sunday"	"1"	374	Not Applicable	Not Applicable
+	"Maine"	"23"	"Monday"	"2"	356	Not Applicable	Not Applicable
+	"Maine"	"23"	"Tuesday"	"3"	312	Not Applicable	Not Applicable
+	"Maine"	"23"	"Wednesday"	"4"	352	Not Applicable	Not Applicable
+	"Maine"	"23"	"Thursday"	"5"	358	Not Applicable	Not Applicable
+	"Maine"	"23"	"Friday"	"6"	385	Not Applicable	Not Applicable
+	"Maine"	"23"	"Saturday"	"7"	404	Not Applicable	Not Applicable
+	"Maine"	"23"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Sunday"	"1"	2082	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Monday"	"2"	1716	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Tuesday"	"3"	1646	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Wednesday"	"4"	1725	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Thursday"	"5"	1810	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Friday"	"6"	1937	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Saturday"	"7"	2211	Not Applicable	Not Applicable
+	"Maryland"	"24"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Sunday"	"1"	2183	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Monday"	"2"	1951	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Tuesday"	"3"	1865	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Wednesday"	"4"	1962	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Thursday"	"5"	1979	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Friday"	"6"	2252	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Saturday"	"7"	2467	Not Applicable	Not Applicable
+	"Massachusetts"	"25"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Sunday"	"1"	2866	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Monday"	"2"	2473	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Tuesday"	"3"	2554	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Wednesday"	"4"	2666	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Thursday"	"5"	2765	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Friday"	"6"	2864	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Saturday"	"7"	3281	Not Applicable	Not Applicable
+	"Michigan"	"26"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Sunday"	"1"	912	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Monday"	"2"	783	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Tuesday"	"3"	823	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Wednesday"	"4"	833	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Thursday"	"5"	815	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Friday"	"6"	835	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Saturday"	"7"	895	Not Applicable	Not Applicable
+	"Minnesota"	"27"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Sunday"	"1"	700	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Monday"	"2"	551	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Tuesday"	"3"	605	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Wednesday"	"4"	586	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Thursday"	"5"	625	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Friday"	"6"	641	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Saturday"	"7"	752	Not Applicable	Not Applicable
+	"Mississippi"	"28"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Sunday"	"1"	1855	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Monday"	"2"	1632	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Tuesday"	"3"	1628	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Wednesday"	"4"	1638	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Thursday"	"5"	1600	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Friday"	"6"	1799	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Saturday"	"7"	2018	Not Applicable	Not Applicable
+	"Missouri"	"29"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Montana"	"30"	"Sunday"	"1"	310	Not Applicable	Not Applicable
+	"Montana"	"30"	"Monday"	"2"	215	Not Applicable	Not Applicable
+	"Montana"	"30"	"Tuesday"	"3"	217	Not Applicable	Not Applicable
+	"Montana"	"30"	"Wednesday"	"4"	236	Not Applicable	Not Applicable
+	"Montana"	"30"	"Thursday"	"5"	272	Not Applicable	Not Applicable
+	"Montana"	"30"	"Friday"	"6"	252	Not Applicable	Not Applicable
+	"Montana"	"30"	"Saturday"	"7"	276	Not Applicable	Not Applicable
+	"Montana"	"30"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Sunday"	"1"	216	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Monday"	"2"	215	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Tuesday"	"3"	224	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Wednesday"	"4"	221	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Thursday"	"5"	202	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Friday"	"6"	227	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Saturday"	"7"	243	Not Applicable	Not Applicable
+	"Nebraska"	"31"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Sunday"	"1"	1111	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Monday"	"2"	1173	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Tuesday"	"3"	1067	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Wednesday"	"4"	1106	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Thursday"	"5"	1106	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Friday"	"6"	1120	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Saturday"	"7"	1206	Not Applicable	Not Applicable
+	"Nevada"	"32"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Sunday"	"1"	421	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Monday"	"2"	349	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Tuesday"	"3"	349	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Wednesday"	"4"	384	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Thursday"	"5"	386	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Friday"	"6"	455	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Saturday"	"7"	468	Not Applicable	Not Applicable
+	"New Hampshire"	"33"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Sunday"	"1"	2261	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Monday"	"2"	1918	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Tuesday"	"3"	1881	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Wednesday"	"4"	1876	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Thursday"	"5"	1974	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Friday"	"6"	2097	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Saturday"	"7"	2487	Not Applicable	Not Applicable
+	"New Jersey"	"34"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Sunday"	"1"	1099	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Monday"	"2"	946	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Tuesday"	"3"	961	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Wednesday"	"4"	953	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Thursday"	"5"	945	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Friday"	"6"	945	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Saturday"	"7"	1119	Not Applicable	Not Applicable
+	"New Mexico"	"35"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"New York"	"36"	"Sunday"	"1"	3913	Not Applicable	Not Applicable
+	"New York"	"36"	"Monday"	"2"	3496	Not Applicable	Not Applicable
+	"New York"	"36"	"Tuesday"	"3"	3469	Not Applicable	Not Applicable
+	"New York"	"36"	"Wednesday"	"4"	3535	Not Applicable	Not Applicable
+	"New York"	"36"	"Thursday"	"5"	3578	Not Applicable	Not Applicable
+	"New York"	"36"	"Friday"	"6"	3814	Not Applicable	Not Applicable
+	"New York"	"36"	"Saturday"	"7"	4304	Not Applicable	Not Applicable
+	"New York"	"36"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Sunday"	"1"	2713	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Monday"	"2"	2261	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Tuesday"	"3"	2141	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Wednesday"	"4"	2295	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Thursday"	"5"	2303	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Friday"	"6"	2390	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Saturday"	"7"	2937	Not Applicable	Not Applicable
+	"North Carolina"	"37"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Sunday"	"1"	50	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Monday"	"2"	54	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Tuesday"	"3"	68	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Wednesday"	"4"	52	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Thursday"	"5"	44	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Friday"	"6"	70	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Saturday"	"7"	73	Not Applicable	Not Applicable
+	"North Dakota"	"38"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Sunday"	"1"	3956	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Monday"	"2"	3372	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Tuesday"	"3"	3311	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Wednesday"	"4"	3415	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Thursday"	"5"	3659	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Friday"	"6"	4087	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Saturday"	"7"	4505	Not Applicable	Not Applicable
+	"Ohio"	"39"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Sunday"	"1"	1384	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Monday"	"2"	1243	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Tuesday"	"3"	1207	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Wednesday"	"4"	1251	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Thursday"	"5"	1340	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Friday"	"6"	1342	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Saturday"	"7"	1543	Not Applicable	Not Applicable
+	"Oklahoma"	"40"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Sunday"	"1"	1069	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Monday"	"2"	991	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Tuesday"	"3"	963	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Wednesday"	"4"	944	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Thursday"	"5"	1007	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Friday"	"6"	1007	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Saturday"	"7"	1049	Not Applicable	Not Applicable
+	"Oregon"	"41"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Sunday"	"1"	4690	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Monday"	"2"	3968	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Tuesday"	"3"	3893	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Wednesday"	"4"	4043	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Thursday"	"5"	4327	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Friday"	"6"	4572	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Saturday"	"7"	5359	Not Applicable	Not Applicable
+	"Pennsylvania"	"42"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Sunday"	"1"	397	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Monday"	"2"	399	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Tuesday"	"3"	398	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Wednesday"	"4"	349	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Thursday"	"5"	383	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Friday"	"6"	394	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Saturday"	"7"	436	Not Applicable	Not Applicable
+	"Rhode Island"	"44"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Sunday"	"1"	1266	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Monday"	"2"	1034	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Tuesday"	"3"	1008	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Wednesday"	"4"	1086	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Thursday"	"5"	1142	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Friday"	"6"	1174	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Saturday"	"7"	1421	Not Applicable	Not Applicable
+	"South Carolina"	"45"	"Unknown"	"9"	47	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Sunday"	"1"	90	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Monday"	"2"	95	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Tuesday"	"3"	90	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Wednesday"	"4"	102	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Thursday"	"5"	103	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Friday"	"6"	108	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Saturday"	"7"	101	Not Applicable	Not Applicable
+	"South Dakota"	"46"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Sunday"	"1"	2317	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Monday"	"2"	1953	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Tuesday"	"3"	1936	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Wednesday"	"4"	2007	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Thursday"	"5"	2122	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Friday"	"6"	2233	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Saturday"	"7"	2459	Not Applicable	Not Applicable
+	"Tennessee"	"47"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Texas"	"48"	"Sunday"	"1"	5218	Not Applicable	Not Applicable
+	"Texas"	"48"	"Monday"	"2"	4776	Not Applicable	Not Applicable
+	"Texas"	"48"	"Tuesday"	"3"	4687	Not Applicable	Not Applicable
+	"Texas"	"48"	"Wednesday"	"4"	4444	Not Applicable	Not Applicable
+	"Texas"	"48"	"Thursday"	"5"	4689	Not Applicable	Not Applicable
+	"Texas"	"48"	"Friday"	"6"	4923	Not Applicable	Not Applicable
+	"Texas"	"48"	"Saturday"	"7"	5736	Not Applicable	Not Applicable
+	"Texas"	"48"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Utah"	"49"	"Sunday"	"1"	1109	Not Applicable	Not Applicable
+	"Utah"	"49"	"Monday"	"2"	960	Not Applicable	Not Applicable
+	"Utah"	"49"	"Tuesday"	"3"	984	Not Applicable	Not Applicable
+	"Utah"	"49"	"Wednesday"	"4"	1035	Not Applicable	Not Applicable
+	"Utah"	"49"	"Thursday"	"5"	1027	Not Applicable	Not Applicable
+	"Utah"	"49"	"Friday"	"6"	1068	Not Applicable	Not Applicable
+	"Utah"	"49"	"Saturday"	"7"	1160	Not Applicable	Not Applicable
+	"Utah"	"49"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Sunday"	"1"	149	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Monday"	"2"	115	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Tuesday"	"3"	128	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Wednesday"	"4"	134	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Thursday"	"5"	165	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Friday"	"6"	163	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Saturday"	"7"	149	Not Applicable	Not Applicable
+	"Vermont"	"50"	"Unknown"	"9"	81	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Sunday"	"1"	1754	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Monday"	"2"	1381	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Tuesday"	"3"	1436	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Wednesday"	"4"	1464	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Thursday"	"5"	1558	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Friday"	"6"	1605	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Saturday"	"7"	1927	Not Applicable	Not Applicable
+	"Virginia"	"51"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Washington"	"53"	"Sunday"	"1"	2222	Not Applicable	Not Applicable
+	"Washington"	"53"	"Monday"	"2"	1929	Not Applicable	Not Applicable
+	"Washington"	"53"	"Tuesday"	"3"	1873	Not Applicable	Not Applicable
+	"Washington"	"53"	"Wednesday"	"4"	1913	Not Applicable	Not Applicable
+	"Washington"	"53"	"Thursday"	"5"	1996	Not Applicable	Not Applicable
+	"Washington"	"53"	"Friday"	"6"	2197	Not Applicable	Not Applicable
+	"Washington"	"53"	"Saturday"	"7"	2277	Not Applicable	Not Applicable
+	"Washington"	"53"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Sunday"	"1"	914	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Monday"	"2"	767	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Tuesday"	"3"	820	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Wednesday"	"4"	874	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Thursday"	"5"	959	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Friday"	"6"	1014	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Saturday"	"7"	1125	Not Applicable	Not Applicable
+	"West Virginia"	"54"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Sunday"	"1"	1405	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Monday"	"2"	1345	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Tuesday"	"3"	1239	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Wednesday"	"4"	1265	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Thursday"	"5"	1289	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Friday"	"6"	1372	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Saturday"	"7"	1551	Not Applicable	Not Applicable
+	"Wisconsin"	"55"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Sunday"	"1"	151	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Monday"	"2"	147	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Tuesday"	"3"	129	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Wednesday"	"4"	140	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Thursday"	"5"	136	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Friday"	"6"	168	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Saturday"	"7"	152	Not Applicable	Not Applicable
+	"Wyoming"	"56"	"Unknown"	"9"	Suppressed	Not Applicable	Not Applicable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2015"
+"Query Parameters:"
+"Title:"
+"2013 Urbanization: All"
+"Autopsy: All"
+"Five-Year Age Groups: All"
+"Gender: All"
+"Hispanic Origin: All"
+"ICD-10 Codes: X40 (Accidental poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics), X41"
+"(Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not"
+"elsewhere classified), X42 (Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not"
+"elsewhere classified), X43 (Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system), X44"
+"(Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X60 (Intentional"
+"self-poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics), X61 (Intentional self-poisoning by and"
+"exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified), X62"
+"(Intentional self-poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified), X63"
+"(Intentional self-poisoning by and exposure to other drugs acting on the autonomic nervous system), X64 (Intentional"
+"self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X85 (Assault by drugs,"
+"medicaments and biological substances), Y10 (Poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics,"
+"undetermined intent), Y11 (Poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic"
+"drugs, not elsewhere classified, undetermined intent), Y12 (Poisoning by and exposure to narcotics and psychodysleptics"
+"[hallucinogens], not elsewhere classified, undetermined intent), Y13 (Poisoning by and exposure to other drugs acting on the"
+"autonomic nervous system, undetermined intent), Y14 (Poisoning by and exposure to other and unspecified drugs, medicaments and"
+"biological substances, undetermined intent)"
+"Place of Death: All"
+"Race: All"
+"States: All"
+"Weekday: All"
+"Year/Month: All"
+"Group By: State, Weekday"
+"Show Totals: Disabled"
+"Show Zero Values: False"
+"Show Suppressed: True"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Nov 3, 2017 3:57:28 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2015 on CDC WONDER Online Database, released December, 2016. Data are from the Multiple Cause of Death Files, 1999-2015, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Nov 3, 2017 3:57:28 PM"
+"---"
+Messages:
+"1. Totals are not available for these results due to suppression constraints. More Information:"
+"http://wonder.cdc.gov/wonder/help/faq.html#Privacy."
+"---"
+Caveats:
+"1. Population and rates are labeled 'Not Applicable' when Autopsy, Place of Death, Weekday or Month are grouped by or limited,"
+"due to lack of a valid population. More information: http://wonder.cdc.gov/wonder/help/ucd.html#NotApplicableRates."
+"2. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"3. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"4. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"5. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"6. Data are Suppressed when the data meet the criteria for confidentiality constraints. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Assurance of Confidentiality."
+"7. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."

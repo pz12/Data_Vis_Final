@@ -1,0 +1,217 @@
+ "Notes"	"Year"	"Year Code"	"Weekday"	"Weekday Code"	Deaths	Population	Crude Rate
+	"1999"	"1999"	"Sunday"	"1"	2523	Not Applicable	Not Applicable
+	"1999"	"1999"	"Monday"	"2"	2181	Not Applicable	Not Applicable
+	"1999"	"1999"	"Tuesday"	"3"	2165	Not Applicable	Not Applicable
+	"1999"	"1999"	"Wednesday"	"4"	2200	Not Applicable	Not Applicable
+	"1999"	"1999"	"Thursday"	"5"	2272	Not Applicable	Not Applicable
+	"1999"	"1999"	"Friday"	"6"	2394	Not Applicable	Not Applicable
+	"1999"	"1999"	"Saturday"	"7"	2734	Not Applicable	Not Applicable
+	"1999"	"1999"	"Unknown"	"9"	1	Not Applicable	Not Applicable
+"Total"	"1999"	"1999"			16470	Not Applicable	Not Applicable
+	"2000"	"2000"	"Sunday"	"1"	2544	Not Applicable	Not Applicable
+	"2000"	"2000"	"Monday"	"2"	2294	Not Applicable	Not Applicable
+	"2000"	"2000"	"Tuesday"	"3"	2225	Not Applicable	Not Applicable
+	"2000"	"2000"	"Wednesday"	"4"	2248	Not Applicable	Not Applicable
+	"2000"	"2000"	"Thursday"	"5"	2256	Not Applicable	Not Applicable
+	"2000"	"2000"	"Friday"	"6"	2511	Not Applicable	Not Applicable
+	"2000"	"2000"	"Saturday"	"7"	2910	Not Applicable	Not Applicable
+	"2000"	"2000"	"Unknown"	"9"	1	Not Applicable	Not Applicable
+"Total"	"2000"	"2000"			16989	Not Applicable	Not Applicable
+	"2001"	"2001"	"Sunday"	"1"	2980	Not Applicable	Not Applicable
+	"2001"	"2001"	"Monday"	"2"	2567	Not Applicable	Not Applicable
+	"2001"	"2001"	"Tuesday"	"3"	2456	Not Applicable	Not Applicable
+	"2001"	"2001"	"Wednesday"	"4"	2450	Not Applicable	Not Applicable
+	"2001"	"2001"	"Thursday"	"5"	2528	Not Applicable	Not Applicable
+	"2001"	"2001"	"Friday"	"6"	2743	Not Applicable	Not Applicable
+	"2001"	"2001"	"Saturday"	"7"	3194	Not Applicable	Not Applicable
+	"2001"	"2001"	"Unknown"	"9"	0	Not Applicable	Not Applicable
+"Total"	"2001"	"2001"			18918	Not Applicable	Not Applicable
+	"2002"	"2002"	"Sunday"	"1"	3555	Not Applicable	Not Applicable
+	"2002"	"2002"	"Monday"	"2"	3071	Not Applicable	Not Applicable
+	"2002"	"2002"	"Tuesday"	"3"	3155	Not Applicable	Not Applicable
+	"2002"	"2002"	"Wednesday"	"4"	3041	Not Applicable	Not Applicable
+	"2002"	"2002"	"Thursday"	"5"	3137	Not Applicable	Not Applicable
+	"2002"	"2002"	"Friday"	"6"	3325	Not Applicable	Not Applicable
+	"2002"	"2002"	"Saturday"	"7"	3741	Not Applicable	Not Applicable
+	"2002"	"2002"	"Unknown"	"9"	1	Not Applicable	Not Applicable
+"Total"	"2002"	"2002"			23026	Not Applicable	Not Applicable
+	"2003"	"2003"	"Sunday"	"1"	3815	Not Applicable	Not Applicable
+	"2003"	"2003"	"Monday"	"2"	3372	Not Applicable	Not Applicable
+	"2003"	"2003"	"Tuesday"	"3"	3323	Not Applicable	Not Applicable
+	"2003"	"2003"	"Wednesday"	"4"	3496	Not Applicable	Not Applicable
+	"2003"	"2003"	"Thursday"	"5"	3522	Not Applicable	Not Applicable
+	"2003"	"2003"	"Friday"	"6"	3641	Not Applicable	Not Applicable
+	"2003"	"2003"	"Saturday"	"7"	4107	Not Applicable	Not Applicable
+	"2003"	"2003"	"Unknown"	"9"	2	Not Applicable	Not Applicable
+"Total"	"2003"	"2003"			25278	Not Applicable	Not Applicable
+	"2004"	"2004"	"Sunday"	"1"	4138	Not Applicable	Not Applicable
+	"2004"	"2004"	"Monday"	"2"	3586	Not Applicable	Not Applicable
+	"2004"	"2004"	"Tuesday"	"3"	3433	Not Applicable	Not Applicable
+	"2004"	"2004"	"Wednesday"	"4"	3491	Not Applicable	Not Applicable
+	"2004"	"2004"	"Thursday"	"5"	3729	Not Applicable	Not Applicable
+	"2004"	"2004"	"Friday"	"6"	4055	Not Applicable	Not Applicable
+	"2004"	"2004"	"Saturday"	"7"	4488	Not Applicable	Not Applicable
+	"2004"	"2004"	"Unknown"	"9"	2	Not Applicable	Not Applicable
+"Total"	"2004"	"2004"			26922	Not Applicable	Not Applicable
+	"2005"	"2005"	"Sunday"	"1"	4671	Not Applicable	Not Applicable
+	"2005"	"2005"	"Monday"	"2"	3847	Not Applicable	Not Applicable
+	"2005"	"2005"	"Tuesday"	"3"	3873	Not Applicable	Not Applicable
+	"2005"	"2005"	"Wednesday"	"4"	3830	Not Applicable	Not Applicable
+	"2005"	"2005"	"Thursday"	"5"	3932	Not Applicable	Not Applicable
+	"2005"	"2005"	"Friday"	"6"	4155	Not Applicable	Not Applicable
+	"2005"	"2005"	"Saturday"	"7"	4963	Not Applicable	Not Applicable
+	"2005"	"2005"	"Unknown"	"9"	2	Not Applicable	Not Applicable
+"Total"	"2005"	"2005"			29273	Not Applicable	Not Applicable
+	"2006"	"2006"	"Sunday"	"1"	5384	Not Applicable	Not Applicable
+	"2006"	"2006"	"Monday"	"2"	4480	Not Applicable	Not Applicable
+	"2006"	"2006"	"Tuesday"	"3"	4450	Not Applicable	Not Applicable
+	"2006"	"2006"	"Wednesday"	"4"	4419	Not Applicable	Not Applicable
+	"2006"	"2006"	"Thursday"	"5"	4585	Not Applicable	Not Applicable
+	"2006"	"2006"	"Friday"	"6"	4839	Not Applicable	Not Applicable
+	"2006"	"2006"	"Saturday"	"7"	5750	Not Applicable	Not Applicable
+	"2006"	"2006"	"Unknown"	"9"	3	Not Applicable	Not Applicable
+"Total"	"2006"	"2006"			33910	Not Applicable	Not Applicable
+	"2007"	"2007"	"Sunday"	"1"	5468	Not Applicable	Not Applicable
+	"2007"	"2007"	"Monday"	"2"	4920	Not Applicable	Not Applicable
+	"2007"	"2007"	"Tuesday"	"3"	4573	Not Applicable	Not Applicable
+	"2007"	"2007"	"Wednesday"	"4"	4610	Not Applicable	Not Applicable
+	"2007"	"2007"	"Thursday"	"5"	4747	Not Applicable	Not Applicable
+	"2007"	"2007"	"Friday"	"6"	5149	Not Applicable	Not Applicable
+	"2007"	"2007"	"Saturday"	"7"	5955	Not Applicable	Not Applicable
+	"2007"	"2007"	"Unknown"	"9"	0	Not Applicable	Not Applicable
+"Total"	"2007"	"2007"			35422	Not Applicable	Not Applicable
+	"2008"	"2008"	"Sunday"	"1"	5515	Not Applicable	Not Applicable
+	"2008"	"2008"	"Monday"	"2"	4692	Not Applicable	Not Applicable
+	"2008"	"2008"	"Tuesday"	"3"	4716	Not Applicable	Not Applicable
+	"2008"	"2008"	"Wednesday"	"4"	4750	Not Applicable	Not Applicable
+	"2008"	"2008"	"Thursday"	"5"	4977	Not Applicable	Not Applicable
+	"2008"	"2008"	"Friday"	"6"	5296	Not Applicable	Not Applicable
+	"2008"	"2008"	"Saturday"	"7"	5888	Not Applicable	Not Applicable
+	"2008"	"2008"	"Unknown"	"9"	3	Not Applicable	Not Applicable
+"Total"	"2008"	"2008"			35837	Not Applicable	Not Applicable
+	"2009"	"2009"	"Sunday"	"1"	5608	Not Applicable	Not Applicable
+	"2009"	"2009"	"Monday"	"2"	4800	Not Applicable	Not Applicable
+	"2009"	"2009"	"Tuesday"	"3"	4733	Not Applicable	Not Applicable
+	"2009"	"2009"	"Wednesday"	"4"	4848	Not Applicable	Not Applicable
+	"2009"	"2009"	"Thursday"	"5"	5249	Not Applicable	Not Applicable
+	"2009"	"2009"	"Friday"	"6"	5267	Not Applicable	Not Applicable
+	"2009"	"2009"	"Saturday"	"7"	6028	Not Applicable	Not Applicable
+	"2009"	"2009"	"Unknown"	"9"	6	Not Applicable	Not Applicable
+"Total"	"2009"	"2009"			36539	Not Applicable	Not Applicable
+	"2010"	"2010"	"Sunday"	"1"	5622	Not Applicable	Not Applicable
+	"2010"	"2010"	"Monday"	"2"	4988	Not Applicable	Not Applicable
+	"2010"	"2010"	"Tuesday"	"3"	5003	Not Applicable	Not Applicable
+	"2010"	"2010"	"Wednesday"	"4"	5018	Not Applicable	Not Applicable
+	"2010"	"2010"	"Thursday"	"5"	5248	Not Applicable	Not Applicable
+	"2010"	"2010"	"Friday"	"6"	5760	Not Applicable	Not Applicable
+	"2010"	"2010"	"Saturday"	"7"	6226	Not Applicable	Not Applicable
+	"2010"	"2010"	"Unknown"	"9"	7	Not Applicable	Not Applicable
+"Total"	"2010"	"2010"			37872	Not Applicable	Not Applicable
+	"2011"	"2011"	"Sunday"	"1"	6034	Not Applicable	Not Applicable
+	"2011"	"2011"	"Monday"	"2"	5356	Not Applicable	Not Applicable
+	"2011"	"2011"	"Tuesday"	"3"	5260	Not Applicable	Not Applicable
+	"2011"	"2011"	"Wednesday"	"4"	5601	Not Applicable	Not Applicable
+	"2011"	"2011"	"Thursday"	"5"	5696	Not Applicable	Not Applicable
+	"2011"	"2011"	"Friday"	"6"	6012	Not Applicable	Not Applicable
+	"2011"	"2011"	"Saturday"	"7"	6926	Not Applicable	Not Applicable
+	"2011"	"2011"	"Unknown"	"9"	35	Not Applicable	Not Applicable
+"Total"	"2011"	"2011"			40920	Not Applicable	Not Applicable
+	"2012"	"2012"	"Sunday"	"1"	6297	Not Applicable	Not Applicable
+	"2012"	"2012"	"Monday"	"2"	5522	Not Applicable	Not Applicable
+	"2012"	"2012"	"Tuesday"	"3"	5413	Not Applicable	Not Applicable
+	"2012"	"2012"	"Wednesday"	"4"	5463	Not Applicable	Not Applicable
+	"2012"	"2012"	"Thursday"	"5"	5621	Not Applicable	Not Applicable
+	"2012"	"2012"	"Friday"	"6"	6028	Not Applicable	Not Applicable
+	"2012"	"2012"	"Saturday"	"7"	6714	Not Applicable	Not Applicable
+	"2012"	"2012"	"Unknown"	"9"	27	Not Applicable	Not Applicable
+"Total"	"2012"	"2012"			41085	Not Applicable	Not Applicable
+	"2013"	"2013"	"Sunday"	"1"	6560	Not Applicable	Not Applicable
+	"2013"	"2013"	"Monday"	"2"	5843	Not Applicable	Not Applicable
+	"2013"	"2013"	"Tuesday"	"3"	5911	Not Applicable	Not Applicable
+	"2013"	"2013"	"Wednesday"	"4"	5739	Not Applicable	Not Applicable
+	"2013"	"2013"	"Thursday"	"5"	6002	Not Applicable	Not Applicable
+	"2013"	"2013"	"Friday"	"6"	6394	Not Applicable	Not Applicable
+	"2013"	"2013"	"Saturday"	"7"	7098	Not Applicable	Not Applicable
+	"2013"	"2013"	"Unknown"	"9"	15	Not Applicable	Not Applicable
+"Total"	"2013"	"2013"			43562	Not Applicable	Not Applicable
+	"2014"	"2014"	"Sunday"	"1"	7028	Not Applicable	Not Applicable
+	"2014"	"2014"	"Monday"	"2"	6236	Not Applicable	Not Applicable
+	"2014"	"2014"	"Tuesday"	"3"	6037	Not Applicable	Not Applicable
+	"2014"	"2014"	"Wednesday"	"4"	6454	Not Applicable	Not Applicable
+	"2014"	"2014"	"Thursday"	"5"	6526	Not Applicable	Not Applicable
+	"2014"	"2014"	"Friday"	"6"	6860	Not Applicable	Not Applicable
+	"2014"	"2014"	"Saturday"	"7"	7500	Not Applicable	Not Applicable
+	"2014"	"2014"	"Unknown"	"9"	17	Not Applicable	Not Applicable
+"Total"	"2014"	"2014"			46658	Not Applicable	Not Applicable
+	"2015"	"2015"	"Sunday"	"1"	7721	Not Applicable	Not Applicable
+	"2015"	"2015"	"Monday"	"2"	6964	Not Applicable	Not Applicable
+	"2015"	"2015"	"Tuesday"	"3"	6972	Not Applicable	Not Applicable
+	"2015"	"2015"	"Wednesday"	"4"	7041	Not Applicable	Not Applicable
+	"2015"	"2015"	"Thursday"	"5"	7351	Not Applicable	Not Applicable
+	"2015"	"2015"	"Friday"	"6"	7716	Not Applicable	Not Applicable
+	"2015"	"2015"	"Saturday"	"7"	8233	Not Applicable	Not Applicable
+	"2015"	"2015"	"Unknown"	"9"	17	Not Applicable	Not Applicable
+"Total"	"2015"	"2015"			52015	Not Applicable	Not Applicable
+"Total"					560696	Not Applicable	Not Applicable
+"---"
+"Dataset: Underlying Cause of Death, 1999-2015"
+"Query Parameters:"
+"Title:"
+"2013 Urbanization: All"
+"Autopsy: All"
+"Five-Year Age Groups: All"
+"Gender: All"
+"Hispanic Origin: All"
+"ICD-10 Codes: X41 (Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic"
+"drugs, not elsewhere classified), X42 (Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens],"
+"not elsewhere classified), X43 (Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system), X44"
+"(Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X61 (Intentional"
+"self-poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere"
+"classified), X62 (Intentional self-poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere"
+"classified), X63 (Intentional self-poisoning by and exposure to other drugs acting on the autonomic nervous system), X64"
+"(Intentional self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X85 (Assault"
+"by drugs, medicaments and biological substances), Y11 (Poisoning by and exposure to antiepileptic, sedative-hypnotic,"
+"antiparkinsonism and psychotropic drugs, not elsewhere classified, undetermined intent), Y12 (Poisoning by and exposure to"
+"narcotics and psychodysleptics [hallucinogens], not elsewhere classified, undetermined intent), Y13 (Poisoning by and exposure"
+"to other drugs acting on the autonomic nervous system, undetermined intent), Y14 (Poisoning by and exposure to other and"
+"unspecified drugs, medicaments and biological substances, undetermined intent)"
+"Place of Death: All"
+"Race: All"
+"States: All"
+"Weekday: All"
+"Year/Month: All"
+"Group By: Year, Weekday"
+"Show Totals: True"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Nov 4, 2017 6:02:03 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2015 on CDC WONDER Online Database, released December, 2016. Data are from the Multiple Cause of Death Files, 1999-2015, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Nov 4, 2017 6:02:03 PM"
+"---"
+Caveats:
+"1. Population and rates are labeled 'Not Applicable' when Autopsy, Place of Death, Weekday or Month are grouped by or limited,"
+"due to lack of a valid population. More information: http://wonder.cdc.gov/wonder/help/ucd.html#NotApplicableRates."
+"2. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"3. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"4. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"5. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"6. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"7. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."

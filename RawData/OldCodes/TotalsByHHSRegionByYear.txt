@@ -1,0 +1,258 @@
+"Notes"	"HHS Region"	"HHS Region Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"1999"	"1999"	1006	13837653	7.3
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2000"	"2000"	999	13922517	7.2
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2001"	"2001"	1314	14041043	9.4
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2002"	"2002"	1455	14122441	10.3
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2003"	"2003"	1601	14182454	11.3
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2004"	"2004"	1422	14206683	10.0
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2005"	"2005"	1589	14216656	11.2
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2006"	"2006"	1935	14245540	13.6
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2007"	"2007"	1901	14279205	13.3
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2008"	"2008"	1718	14340115	12.0
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2009"	"2009"	1766	14403575	12.3
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2010"	"2010"	1626	14444865	11.3
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2011"	"2011"	1898	14492360	13.1
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2012"	"2012"	1887	14562704	13.0
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2013"	"2013"	2374	14618806	16.2
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2014"	"2014"	2792	14680722	19.0
+	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"	"2015"	"2015"	3624	14727584	24.6
+"Total"	"HHS Region #1  CT, ME, MA, NH, RI, VT"	"HHS1"			30907	243324923	12.7
+	"HHS Region #2  NJ, NY"	"HHS2"	"1999"	"1999"	1516	27242317	5.6
+	"HHS Region #2  NJ, NY"	"HHS2"	"2000"	"2000"	1410	27390807	5.1
+	"HHS Region #2  NJ, NY"	"HHS2"	"2001"	"2001"	1784	27575509	6.5
+	"HHS Region #2  NJ, NY"	"HHS2"	"2002"	"2002"	1736	27690443	6.3
+	"HHS Region #2  NJ, NY"	"HHS2"	"2003"	"2003"	1685	27777341	6.1
+	"HHS Region #2  NJ, NY"	"HHS2"	"2004"	"2004"	1421	27806128	5.1
+	"HHS Region #2  NJ, NY"	"HHS2"	"2005"	"2005"	1767	27784584	6.4
+	"HHS Region #2  NJ, NY"	"HHS2"	"2006"	"2006"	2527	27766310	9.1
+	"HHS Region #2  NJ, NY"	"HHS2"	"2007"	"2007"	2435	27810220	8.8
+	"HHS Region #2  NJ, NY"	"HHS2"	"2008"	"2008"	2393	27923526	8.6
+	"HHS Region #2  NJ, NY"	"HHS2"	"2009"	"2009"	1855	28062668	6.6
+	"HHS Region #2  NJ, NY"	"HHS2"	"2010"	"2010"	2425	28169996	8.6
+	"HHS Region #2  NJ, NY"	"HHS2"	"2011"	"2011"	2960	28286352	10.5
+	"HHS Region #2  NJ, NY"	"HHS2"	"2012"	"2012"	3328	28434851	11.7
+	"HHS Region #2  NJ, NY"	"HHS2"	"2013"	"2013"	3603	28550466	12.6
+	"HHS Region #2  NJ, NY"	"HHS2"	"2014"	"2014"	3553	28684402	12.4
+	"HHS Region #2  NJ, NY"	"HHS2"	"2015"	"2015"	4208	28753804	14.6
+"Total"	"HHS Region #2  NJ, NY"	"HHS2"			40606	475709724	8.5
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"1999"	"1999"	2158	27675490	7.8
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2000"	"2000"	2425	27820058	8.7
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2001"	"2001"	2419	28043707	8.6
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2002"	"2002"	2703	28243034	9.6
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2003"	"2003"	3149	28436704	11.1
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2004"	"2004"	3261	28648227	11.4
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2005"	"2005"	3173	28852252	11.0
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2006"	"2006"	3570	29069762	12.3
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2007"	"2007"	3757	29248550	12.8
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2008"	"2008"	3900	29435166	13.2
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2009"	"2009"	3725	29654916	12.6
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2010"	"2010"	3859	29829606	12.9
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2011"	"2011"	4675	30048274	15.6
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2012"	"2012"	4705	30238794	15.6
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2013"	"2013"	5010	30389522	16.5
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2014"	"2014"	5694	30534738	18.6
+	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"	"2015"	"2015"	6636	30654187	21.6
+"Total"	"HHS Region #3  DE, DC, MD, PA, VA, WV"	"HHS3"			64819	496822987	13.0
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"1999"	"1999"	2590	52644737	4.9
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2000"	"2000"	3221	53252966	6.0
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2001"	"2001"	4204	54148670	7.8
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2002"	"2002"	4665	54856185	8.5
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2003"	"2003"	5336	55536461	9.6
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2004"	"2004"	5936	56425292	10.5
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2005"	"2005"	6577	57393064	11.5
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2006"	"2006"	7474	58439884	12.8
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2007"	"2007"	7864	59313566	13.3
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2008"	"2008"	8271	60073894	13.8
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2009"	"2009"	8589	60652733	14.2
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2010"	"2010"	8854	61082315	14.5
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2011"	"2011"	8860	61762344	14.3
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2012"	"2012"	8619	62356916	13.8
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2013"	"2013"	8571	62884128	13.6
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2014"	"2014"	9304	63573351	14.6
+	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"	"2015"	"2015"	10675	64301783	16.6
+"Total"	"HHS Region #4  AL, FL, GA, KY, MS, NC, SC, TN"	"HHS4"			119610	998698289	12.0
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"1999"	"1999"	2291	49842706	4.6
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2000"	"2000"	2584	50074516	5.2
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2001"	"2001"	2987	50384360	5.9
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2002"	"2002"	3502	50569219	6.9
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2003"	"2003"	3446	50761359	6.8
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2004"	"2004"	4267	50932085	8.4
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2005"	"2005"	4705	51068740	9.2
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2006"	"2006"	5700	51235128	11.1
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2007"	"2007"	5764	51395195	11.2
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2008"	"2008"	6145	51522138	11.9
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2009"	"2009"	5992	51637057	11.6
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2010"	"2010"	6471	51725489	12.5
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2011"	"2011"	7003	51863945	13.5
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2012"	"2012"	7246	51945711	13.9
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2013"	"2013"	7922	52082560	15.2
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2014"	"2014"	8753	52196212	16.8
+	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"	"2015"	"2015"	9829	52276605	18.8
+"Total"	"HHS Region #5  IL, IN, MI, MN, OH, WI"	"HHS5"			94607	871513025	10.9
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"1999"	"1999"	1832	32916120	5.6
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2000"	"2000"	1917	33263896	5.8
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2001"	"2001"	2292	33787858	6.8
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2002"	"2002"	2666	34237908	7.8
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2003"	"2003"	3231	34659255	9.3
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2004"	"2004"	3372	35124988	9.6
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2005"	"2005"	3691	35616719	10.4
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2006"	"2006"	4162	36040233	11.5
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2007"	"2007"	4431	36680633	12.1
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2008"	"2008"	4142	37298817	11.1
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2009"	"2009"	4538	37944626	12.0
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2010"	"2010"	4535	38405381	11.8
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2011"	"2011"	4777	39061228	12.2
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2012"	"2012"	4649	39510585	11.8
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2013"	"2013"	4822	39968891	12.1
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2014"	"2014"	5058	40536626	12.5
+	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"	"2015"	"2015"	5067	41114489	12.3
+"Total"	"HHS Region #6  AR, LA, NM, OK, TX"	"HHS6"			65182	626168253	10.4
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"1999"	"1999"	457	12862684	3.6
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2000"	"2000"	525	12921216	4.1
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2001"	"2001"	642	12995137	4.9
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2002"	"2002"	743	13050886	5.7
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2003"	"2003"	861	13113049	6.6
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2004"	"2004"	953	13185119	7.2
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2005"	"2005"	1076	13261550	8.1
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2006"	"2006"	1278	13360972	9.6
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2007"	"2007"	1267	13454049	9.4
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2008"	"2008"	1287	13545104	9.5
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2009"	"2009"	1480	13639345	10.9
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2010"	"2010"	1637	13714741	11.9
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2011"	"2011"	1622	13786876	11.8
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2012"	"2012"	1665	13837604	12.0
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2013"	"2013"	1748	13897060	12.6
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2014"	"2014"	1788	13956239	12.8
+	"HHS Region #7  IA, KS, MO, NE"	"HHS7"	"2015"	"2015"	1830	14015402	13.1
+"Total"	"HHS Region #7  IA, KS, MO, NE"	"HHS7"			20859	228597033	9.1
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"1999"	"1999"	644	9213458	7.0
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2000"	"2000"	659	9327451	7.1
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2001"	"2001"	736	9508054	7.7
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2002"	"2002"	887	9625093	9.2
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2003"	"2003"	1024	9714498	10.5
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2004"	"2004"	1080	9830809	11.0
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2005"	"2005"	1220	9965448	12.2
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2006"	"2006"	1274	10153744	12.5
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2007"	"2007"	1497	10345641	14.5
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2008"	"2008"	1525	10531910	14.5
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2009"	"2009"	1525	10711484	14.2
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2010"	"2010"	1358	10832893	12.5
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2011"	"2011"	1646	11008389	15.0
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2012"	"2012"	1687	11157404	15.1
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2013"	"2013"	1750	11335332	15.4
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2014"	"2014"	1842	11499157	16.0
+	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"	"2015"	"2015"	1875	11686945	16.0
+"Total"	"HHS Region #8  CO, MT, ND, SD, UT, WY"	"HHS8"			22229	176447710	12.6
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"1999"	"1999"	3480	41668045	8.4
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2000"	"2000"	2799	42212074	6.6
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2001"	"2001"	2116	43077282	4.9
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2002"	"2002"	3999	43681502	9.2
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2003"	"2003"	4216	44263527	9.5
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2004"	"2004"	4352	44846771	9.7
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2005"	"2005"	4591	45391892	10.1
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2006"	"2006"	4917	45882732	10.7
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2007"	"2007"	5432	46334739	11.7
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2008"	"2008"	5333	46870542	11.4
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2009"	"2009"	5744	47335765	12.1
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2010"	"2010"	5884	47706825	12.3
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2011"	"2011"	6070	48272549	12.6
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2012"	"2012"	5931	48745929	12.2
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2013"	"2013"	6446	49153335	13.1
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2014"	"2014"	6434	49792644	12.9
+	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"	"2015"	"2015"	6721	50295331	13.4
+"Total"	"HHS Region #9  AZ, CA, HI, NV"	"HHS9"			84465	785531484	10.8
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"1999"	"1999"	875	11136958	7.9
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2000"	"2000"	876	11236405	7.8
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2001"	"2001"	900	11407335	7.9
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2002"	"2002"	1162	11548482	10.1
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2003"	"2003"	1236	11663285	10.6
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2004"	"2004"	1360	11799196	11.5
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2005"	"2005"	1424	11965694	11.9
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2006"	"2006"	1588	12185607	13.0
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2007"	"2007"	1662	12369409	13.4
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2008"	"2008"	1736	12552754	13.8
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2009"	"2009"	1790	12729360	14.1
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2010"	"2010"	1680	12833427	13.1
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2011"	"2011"	1829	13009600	14.1
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2012"	"2012"	1785	13123542	13.6
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2013"	"2013"	1736	13248739	13.1
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2014"	"2014"	1837	13402965	13.7
+	"HHS Region #10  AK, ID, OR, WA"	"HHS10"	"2015"	"2015"	1939	13592690	14.3
+"Total"	"HHS Region #10  AK, ID, OR, WA"	"HHS10"			25415	209805448	12.1
+"Total"					568699	5112618876	11.1
+"---"
+"Dataset: Underlying Cause of Death, 1999-2015"
+"Query Parameters:"
+"Title:"
+"2013 Urbanization: All"
+"Autopsy: All"
+"Five-Year Age Groups: All"
+"Gender: All"
+"HHS Regions: All"
+"Hispanic Origin: All"
+"ICD-10 Codes: X40 (Accidental poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics), X41"
+"(Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not"
+"elsewhere classified), X42 (Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not"
+"elsewhere classified), X43 (Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system), X44"
+"(Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X60 (Intentional"
+"self-poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics), X61 (Intentional self-poisoning by and"
+"exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified), X62"
+"(Intentional self-poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified), X63"
+"(Intentional self-poisoning by and exposure to other drugs acting on the autonomic nervous system), X64 (Intentional"
+"self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances), X85 (Assault by drugs,"
+"medicaments and biological substances), Y10 (Poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics,"
+"undetermined intent), Y11 (Poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic"
+"drugs, not elsewhere classified, undetermined intent), Y12 (Poisoning by and exposure to narcotics and psychodysleptics"
+"[hallucinogens], not elsewhere classified, undetermined intent), Y13 (Poisoning by and exposure to other drugs acting on the"
+"autonomic nervous system, undetermined intent), Y14 (Poisoning by and exposure to other and unspecified drugs, medicaments and"
+"biological substances, undetermined intent)"
+"Place of Death: All"
+"Race: All"
+"Weekday: All"
+"Year/Month: All"
+"Group By: HHS Region, Year"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Nov 3, 2017 4:13:18 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2015 on CDC WONDER Online Database, released December, 2016. Data are from the Multiple Cause of Death Files, 1999-2015, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Nov 3, 2017 4:13:18 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the Vintage 2015"
+"postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The population figures for"
+"year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal series released by NCHS"
+"on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18, 2012."
+"Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race estimates"
+"of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on October 26,"
+"2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999 intercensal"
+"series of July 1 estimates. Population figures for the infant age groups are the number of live births. <br/><b>Note:</b> Rates"
+"and population figures for years 2001 - 2009 differ slightly from previously published reports, due to use of the population"
+"estimates which were available at the time of release."
+"6. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."
+"7. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."
