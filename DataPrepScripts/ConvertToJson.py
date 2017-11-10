@@ -102,5 +102,30 @@ for categoryName in DataCategories.keys():
             yearsDict[datum["Year"]] = singleYearDict
         yearsDict[datum["Year"]][categoryName + "Rates"].append(filterObjKeys(keysToRemove, datum))
 
+
+#Process level 4 (AllStatesByYear)
+master["Years"] = {}
+yearsDict = master["Years"]
+topLevelFilterString = "AllStatesByYear"
+keysToRemove = ["Year", "Year Code"]
+
+topLevelFilepaths = filterFiles(topLevelFilterString)
+
+for categoryName in DataCategories.keys():
+    filepath = [path for path in topLevelFilepaths if re.search(re.escape(categoryName), path)][0]
+    data = tsv(filepath, categoryName)
+    for datum in data:
+        if datum["Year"] not in yearsDict:
+            singleYearDict = {
+                "Year": datum["Year"]
+            }
+            for category in DataCategories.keys():
+                singleYearDict[category + "Rates"] = []
+            yearsDict[datum["Year"]] = singleYearDict
+        yearsDict[datum["Year"]][categoryName + "Rates"].append(filterObjKeys(keysToRemove, datum))
+
+
+
+
 with open(OUT_FILEPATH, 'w') as f:
     json.dump(master, f)
