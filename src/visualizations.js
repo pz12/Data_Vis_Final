@@ -76,8 +76,14 @@ function loadPage(){
 width = 1200;
 height = 800;
 let results;
-d3.csv('Year_Timeline_2012.csv', (error, electionResults) => {
-  console.log(electionResults)
+let year = "2008";
+d3.tsv('data/TotalsByStateByYear.txt', (error, electionResults) => {
+
+  electionResults = electionResults.filter(( obj ) => {
+
+    return obj.Year === year;
+});
+console.log(electionResults)
   svg = d3.select('#USmap')
             .append('svg')
             .attr('width', width)
