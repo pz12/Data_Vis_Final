@@ -19,8 +19,8 @@ class DataModel{
     constructor(dataObj){
         this.data = dataObj;
         //Get list of possible years
-        this.possibleStates = dataObj.keys();
-        this.possibleYears = dataObj[this.possibleStates[0]].Years.keys();
+        this.possibleStates = Object.keys(dataObj.States);
+        this.possibleYears = Object.keys(dataObj.States[this.possibleStates[0]].Years);
         this.possibleCategories= ["DayOfTheWeek", "Gender", "PlaceOfDeath", "Race", "Totals"]
 
     }    
@@ -45,17 +45,17 @@ class DataModel{
             throw Error(`Invalid Argument: ${yearSpecifier} is not a valid year. The max year is ${Math.max(yearsAsNums)} and the min year is ${Math.min(yearsAsNums)} in case that's helpful...`)
         }
 
-        outputObjects = [];
+        const outputObjects = [];
         if (yearSpecifier == "all"){
             if (stateSpecifier == "all"){
                 if (categorySpecifier == "all"){
                     //Year, state, and category are all "all"
                     // Push all top-level ("AllYearAllState") objects to the output list.
-                    for (let key of this.data.keys()){
+                    for (let key of Object.keys(this.data)){
                         if (key == "States" || key == "Years"){
                             continue;
                         }
-                        outputObjects.push(this.data[key]);
+                        outputObjects.push(...this.data[key]);
                     }
                 }
                 else{
@@ -64,7 +64,7 @@ class DataModel{
                         throw Error('InvalidArgument: "Totals" for all states and all years was requested, however this ' +
                             'data was not downloaded and is therefore not available. Call Max if you have beef.')
                     }
-                    outputObjects.push(this.data[categorySpecifier + "Rates"])
+                    outputObjects.push(...this.data[categorySpecifier + "Rates"])
                 }
             }
             else {
@@ -72,16 +72,16 @@ class DataModel{
                 const stateObj = this.data.States[stateSpecifier];
                 if (categorySpecifier == "all"){
                     //Push all state-level time-aggregate objects to the output list for this state.
-                    for (let key of stateObj.keys()) {
-                        if (key == "Years") {
+                    for (let key of Object.keys(stateObj)) {
+                        if (key == "Years" || key == "StateName") {
                             continue;
                         }
-                        outputObjects.push(stateObj[key]);
+                        outputObjects.push(...stateObj[key]);
                     }
                 }
                 else {
                     // Year is "all", state and category have been specified
-                    outputObjects.push(stateObj[categorySpecifier + "Rates"])
+                    outputObjects.push(...stateObj[categorySpecifier + "Rates"])
                 }
 
             }
@@ -93,18 +93,18 @@ class DataModel{
                 if (categorySpecifier == "all"){
                     //Years was specified, state and category are "all"
                     //Push all year-level geographically aggregated objects to the output list
-                    for (let key of yearObj.keys()) {
-                        if (key == "Years") {
+                    for (let key of Object.keys(yearObj)) {
+                        if (key == "Year") {
                             continue;
                         }
-                        outputObjects.push(yearObj[key]);
+                        outputObjects.push(...yearObj[key]);
                     }
 
                 }
                 else {
                     //Year and category were specified, state was "all"
                     //Push all year-level objects to the output list that match the requested category
-                    outputObjects.push(yearObj[yearSpecifier][categorySpecifier + "Rates"])
+                    outputObjects.push(...yearObj[categorySpecifier + "Rates"])
                 }
             }
             else {
@@ -112,13 +112,16 @@ class DataModel{
                 const stateYearObj = this.data["States"][stateSpecifier]["Years"][yearSpecifier];
                 if (categorySpecifier == "all"){
                     // Year and state were specified, category was "all"
-                    for (let key of stateYearObj.keys()) {
-                        outputObjects.push(stateYearObj[key]);
+                    for (let key of Object.keys(stateYearObj)) {
+                        if (key == "Years"){
+                            continue;
+                        }
+                        outputObjects.push(...stateYearObj[key]);
                     }
                 }
                 else {
                     //Year, state, and category were specified
-                    outputObjects.push(stateYearObj[categorySpecifier + "Rates"])
+                    outputObjects.push(...stateYearObj[categorySpecifier + "Rates"])
                 }
             }
 
@@ -139,7 +142,7 @@ class DataModel{
             "Totals" : []
         };
         for (let item of items){
-            const itemKeys = item.keys();
+            const itemKeys = Object.keys(item);
             if (itemKeys.indexOf("Place of Death") != -1){
                 categorizedItems.PlaceOfDeath.push(item)
             }
