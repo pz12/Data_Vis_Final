@@ -1,6 +1,6 @@
 
 
-function loadPage(){
+function viz(){
 
 
 
@@ -49,29 +49,29 @@ function loadPage(){
     })
 
 
-    let width = 400;
-    let height = 400;
-    svg = d3.select('#topTen')
-              .append('svg')
-              .attr('width', width)
-              .attr('height', height)
-    svg.append('text')
-      .text('Top 10 Reasons for Death')
-      .attr('x', 20)
-      .attr('y', 15)
-    data = [200,180,150,140]
-    let list = svg.selectAll('rect')
-                  .data(data)
-    list.enter().append('rect')
-                .attr('x', 0)
-                .attr('y', function(d,i) {
-                  return i*20+50;
-                })
-                .attr('width', function(d) {
-                  return d;
-                })
-                .attr('height', 20)
-                .attr('fill', 'red')
+    // let width = 400;
+    // let height = 400;
+    // svg = d3.select('#topTen')
+    //           .append('svg')
+    //           .attr('width', width)
+    //           .attr('height', height)
+    // svg.append('text')
+    //   .text('Top 10 Reasons for Death')
+    //   .attr('x', 20)
+    //   .attr('y', 15)
+    // data = [200,180,150,140]
+    // let list = svg.selectAll('rect')
+    //               .data(data)
+    // list.enter().append('rect')
+    //             .attr('x', 0)
+    //             .attr('y', function(d,i) {
+    //               return i*20+50;
+    //             })
+    //             .attr('width', function(d) {
+    //               return d;
+    //             })
+    //             .attr('height', 20)
+    //             .attr('fill', 'red')
 
 width = 1200;
 height = 800;
@@ -84,6 +84,7 @@ d3.tsv('data/TotalsByStateByYear.txt', (error, stateResults) => {
 
     return obj.Year === year;
 });
+console.log(stateResults)
 let radiusScale = d3.scaleLinear()
                     .domain([0, d3.max(stateResults, d => d['Crude Rate'])])
                     .range([0,8]);
@@ -112,6 +113,7 @@ let radiusScale = d3.scaleLinear()
                   //   return Math.random() * (50 - 40) + 40;
                   // })
                   .attr('fill', 'red')
+                  .attr('stroke', 'black')
                   .attr('class', 'tile')
 
 
