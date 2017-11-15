@@ -78,22 +78,22 @@ height = 800;
 let results;
 let year = "2015";
 
-d3.tsv('data/TotalsByStateByYear.txt', (error, electionResults) => {
+d3.tsv('data/TotalsByStateByYear.txt', (error, stateResults) => {
 
-  electionResults = electionResults.filter(( obj ) => {
+  stateResults = stateResults.filter(( obj ) => {
 
     return obj.Year === year;
 });
 let radiusScale = d3.scaleLinear()
-                    .domain([0, d3.max(data, d => d['Crude Rate'])])
-                    .range([0,40]);
-console.log(electionResults)
+                    .domain([0, d3.max(stateResults, d => d['Crude Rate'])])
+                    .range([0,8]);
+
   svg = d3.select('#USmap')
             .append('svg')
             .attr('width', width)
             .attr('height', height)
   svg.selectAll('circle')
-                  .data(electionResults)
+                  .data(stateResults)
                   .enter()
                   .append('circle')
                   .attr('cx', (d) => {
