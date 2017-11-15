@@ -107,7 +107,7 @@ console.log(electionResults)
                   // .attr('height', (d) => {
                   //   return Math.random() * (50 - 40) + 40;
                   // })
-                  .attr('fill', 'red')
+                  .attr('fill', 'blue')
                   .attr('class', 'tile')
 
 
