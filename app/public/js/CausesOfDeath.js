@@ -32,14 +32,16 @@ update(codData){
         return b.Num_Deaths - a.Num_Deaths;
       });
 
+console.log(d3.max(codData, d => d.Num_Deaths));
+
       // let totDeath = this.codDate.map(d=>{return d.Num_Deaths})
       let xScale = d3.scaleLinear()
-                      .domain([0, d3.max(codData, d => d.Num_Deaths)])
+                      .domain([0, d3.max(codData, d => parseInt(d.Num_Deaths))])
                       .range([0, this.svgWidth]);
       //
       //         // Create colorScale
               let colorScale = d3.scaleLinear()
-                      .domain([0, d3.max(codData, d => d.Num_Deaths)])
+                      .domain([0, d3.max(codData, d => parseInt(d.Num_Deaths))])
                       .range(["green", "orange"]);
 
 
@@ -58,9 +60,9 @@ update(codData){
                   })
                   .attr('width', d => {
                     //console.log(parseInt(d.Num_Deaths))
-                    console.log(d);
-                    console.log(typeof(d.Num_Deaths))
-                    return xScale(parseInt(d.Num_Deaths));
+                    let NumDeaths = parseInt(d.Num_Deaths);
+                    console.log(NumDeaths)
+                    return xScale(NumDeaths);
                   })
                   .attr('height', 20)
                   .attr('fill', function (d) {
