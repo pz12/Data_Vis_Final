@@ -32,8 +32,6 @@ update(codData){
         return b.Num_Deaths - a.Num_Deaths;
       });
 
-console.log(d3.max(codData, d => d.Num_Deaths));
-
       // let totDeath = this.codDate.map(d=>{return d.Num_Deaths})
       let xScale = d3.scaleLinear()
                       .domain([0, d3.max(codData, d => parseInt(d.Num_Deaths))])
@@ -42,7 +40,12 @@ console.log(d3.max(codData, d => d.Num_Deaths));
       //         // Create colorScale
               let colorScale = d3.scaleLinear()
                       .domain([0, d3.max(codData, d => parseInt(d.Num_Deaths))])
-                      .range(["green", "orange"]);
+                      .range(["green", "red"]);
+
+      // Define the div for the tooltip
+      let div = d3.select("#topTen").append("div")
+          .attr("class", "tooltip")
+          .style("opacity", 0);
 
 
       let causesRect = this.svg
@@ -52,22 +55,32 @@ console.log(d3.max(codData, d => d.Num_Deaths));
         causesRect.exit().remove();
         causesRect = causesRect_new.merge(causesRect);
 
-        causesRect.transition()
-                  .duration(1000)
+        causesRect .on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div.html(d.ICD_Code + ":" + "<br/>"  + d.Cause_of_Death)
+                .style("left", (d3.event.pageX-30) + "px")
+                .style("top", (d3.event.pageY) + "px");
+                })
+                .on("mouseout", function(d) {
+                    div.transition()
+                        .duration(500)
+                        .style("opacity", 0);
+                })
                   .attr('x', 0)
                   .attr('y', function(d,i) {
                           return (i*25);
                   })
                   .attr('width', d => {
-                    //console.log(parseInt(d.Num_Deaths))
                     let NumDeaths = parseInt(d.Num_Deaths);
-                    console.log(NumDeaths)
                     return xScale(NumDeaths);
                   })
                   .attr('height', 20)
                   .attr('fill', function (d) {
                     return colorScale(d.Num_Deaths);
                   })
+
 
       };
 
