@@ -55,11 +55,12 @@ update(codData){
         causesRect.exit().remove();
         causesRect = causesRect_new.merge(causesRect);
 
-        causesRect .on("mouseover", function(d) {
+        causesRect.on("mouseover", function(d) {
             div.transition()
                 .duration(200)
                 .style("opacity", .9);
-            div.html(d.ICD_Code + ":" + "<br/>"  + d.Cause_of_Death)
+            // div.html(d.Cause_of_Death + "<br/>" + "(" + d.Num_Deaths + ")")
+            div.html(d.Num_Deaths + " - " + d.Cause_of_Death)
                 .style("left", (d3.event.pageX-30) + "px")
                 .style("top", (d3.event.pageY) + "px");
                 })
@@ -80,7 +81,6 @@ update(codData){
                   .attr('fill', function (d) {
                     return colorScale(d.Num_Deaths);
                   })
-
 
       };
 
