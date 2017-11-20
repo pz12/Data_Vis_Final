@@ -1,13 +1,11 @@
 
-
 let CofDeath = new CausesOfDeath();
-let USmap = new USmap();
+let USMap = new USmap();
 
 d3.json("data/ProjectData.json", (d)=>{
   console.log(d)
-  this.model = new DataModel(d);
-  USmap.update('1991')
-
+   let datamodel = new DataModel(d);
+   USMap.update('1991')
 
     // beginTest()
 });
@@ -16,20 +14,6 @@ d3.csv("data/Cause_of_Death_2000.csv", function(error, codData){
 
     CofDeath.update(codData);
 });
-
-
-function changeYear() {
-  CofDeath.update(codData);
-  USmap.update()
-
-}
-
-
-
-
-
-
-
 function beginTest(){
   console.log('yes')
 

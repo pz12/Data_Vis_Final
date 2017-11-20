@@ -17,13 +17,14 @@
 
 class DataModel{
     constructor(dataObj){
+      console.log(dataObj)
         this.data = dataObj;
         //Get list of possible years
         this.possibleStates = Object.keys(dataObj.States);
         this.possibleYears = Object.keys(dataObj.States[this.possibleStates[0]].Years);
         this.possibleCategories= ["DayOfTheWeek", "Gender", "PlaceOfDeath", "Race", "Totals"]
 
-    }    
+    }
 
     //The following method will extract the requested data from the data model and return a list of objects that meet
     // the query criteria. For example to obtain the gender data for Alabama for 1999 the call would be
@@ -34,7 +35,7 @@ class DataModel{
         stateSpecifier = stateSpecifier.toString();
         yearSpecifier = yearSpecifier.toString();
         if (this.possibleCategories.indexOf(categorySpecifier) == -1 && categorySpecifier != "all"){
-            throw Error(`Invalid Argument: ${categorySpecifier} is not a valid data category. 
+            throw Error(`Invalid Argument: ${categorySpecifier} is not a valid data category.
             The following is a list of valid data categories: ${this.possibleCategories.push("all")}`)
         }
         if (this.possibleStates.indexOf(stateSpecifier) == -1 && stateSpecifier != "all"){
@@ -159,7 +160,7 @@ class DataModel{
                 categorizedItems.Totals.push(item)
             }
             else {
-                throw Error(`Runtime Error: The following object could not be matched to a 
+                throw Error(`Runtime Error: The following object could not be matched to a
                 category type: ${JSON.stringify(item, null, 2)} `)
             }
         }

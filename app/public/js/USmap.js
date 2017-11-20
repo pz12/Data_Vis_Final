@@ -26,8 +26,8 @@ class USmap {
         return text;
     }
 
-update(stateResults) {
-
+update(year) {
+  console.log(year)
   //Use this tool tip element to handle any hover over the chart
   let tip = d3.tip().attr('class', 'd3-tip')
       .direction('se')
@@ -50,8 +50,6 @@ update(stateResults) {
       this.svg.call(tip)
 
 let results;
-
-
 
 let radiusScale = d3.scaleLinear()
                     .domain([0, d3.max(stateResults, d => d['Crude Rate'])])
