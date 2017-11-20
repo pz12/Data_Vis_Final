@@ -17,7 +17,6 @@
 
 class DataModel{
     constructor(dataObj){
-      console.log(dataObj)
         this.data = dataObj;
         //Get list of possible years
         this.possibleStates = Object.keys(dataObj.States);
