@@ -1,11 +1,14 @@
 
+let datamodel;
+
 let CofDeath = new CausesOfDeath();
 let USMap = new USmap();
-let datamodel;
+let weekdays = new DaysOfWeek();
 
 d3.json("data/ProjectData.json", (d)=>{
   // console.log(d)
    datamodel = new DataModel(d);
+   // weekdays.update('1999')
    USMap.update('1999')
 
     // beginTest()
