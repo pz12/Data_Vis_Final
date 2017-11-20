@@ -13,7 +13,9 @@ class DaysOfWeek {
 
   update(daysData) {
 
-
+    console.log('Days of week loading')
+    let daysData = datamodel.getData("DayOfTheWeek", "all", "all")
+    console.log(daysData)
 
       let radiusScale = d3.scaleLinear()
                           .domain([0, d3.max(daysData, d => d['Deaths'])])
