@@ -31,7 +31,6 @@ class DataModel{
     // to get race data for all years for all states the call would be `getData("Race", "all", "all")`. Year may
     // specified as a number or a string.
     getData(categorySpecifier, stateSpecifier, yearSpecifier){
-      console.log("getData is being called")
         stateSpecifier = stateSpecifier.toString();
         yearSpecifier = yearSpecifier.toString();
         if (this.possibleCategories.indexOf(categorySpecifier) == -1 && categorySpecifier != "all"){
