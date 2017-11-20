@@ -62,14 +62,19 @@ class DataModel{
                 }
                 else{
                     // Pull the by-state all-year totals and add a "state" field to each object.
-                    Object.keys(this.data.States).forEach((stateName, index)=>{
-                        let stateObj = this.data.States[stateName];
-                        let requestedObjs = stateObj[categorySpecifier + "Rates"];
-                        for (let indivObj of requestedObjs){
-                            indivObj.State = stateName;
-                        }
-                        outputObjects.push(...requestedObjs)
-                    });
+                    if (categorySpecifier == "Totals"){
+                        Object.keys(this.data.States).forEach((stateName, index)=>{
+                            let stateObj = this.data.States[stateName];
+                            let requestedObjs = stateObj[categorySpecifier + "Rates"];
+                            for (let indivObj of requestedObjs){
+                                indivObj.State = stateName;
+                            }
+                            outputObjects.push(...requestedObjs)
+                        });
+                    }
+                    else {
+                        outputObjects.push(...this.data[categorySpecifier + "Rates"])
+                    }
                 }
             }
             else {
@@ -109,7 +114,20 @@ class DataModel{
                 else {
                     //Year and category were specified, state was "all"
                     //Push all year-level objects to the output list that match the requested category
-                    outputObjects.push(...yearObj[categorySpecifier + "Rates"])
+                    if (categorySpecifier == "Totals"){
+                        Object.keys(this.data.States).forEach((stateName, index)=>{
+                            let stateObj = this.data.States[stateName].Years[yearSpecifier];
+                            let requestedObjs = stateObj[categorySpecifier + "Rates"];
+                            for (let indivObj of requestedObjs){
+                                indivObj.State = stateName;
+                                indivObj.Year = yearSpecifier;
+                            }
+                            outputObjects.push(...requestedObjs)
+                        });
+                    }
+                    else {
+                        outputObjects.push(...this.data[categorySpecifier + "Rates"])
+                    }
                 }
             }
             else {
@@ -131,7 +149,6 @@ class DataModel{
             }
 
         }
-        console.log(outputObjects)
         return outputObjects;
     }
 
