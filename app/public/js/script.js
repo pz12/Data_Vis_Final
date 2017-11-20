@@ -1,5 +1,48 @@
 
 
+let CofDeath = new CausesOfDeath();
+let USmap = new USmap();
+
+d3.json("data/ProjectData.json", (d)=>{
+  console.log(d)
+  this.model = new DataModel(d);
+  USmap.update('1991')
+
+
+    // beginTest()
+});
+d3.csv("data/Cause_of_Death_2000.csv", function(error, codData){
+
+
+    CofDeath.update(codData);
+});
+
+
+function changeYear() {
+  CofDeath.update(codData);
+  USmap.update()
+
+}
+
+
+
+
+
+
+
+function beginTest(){
+  console.log('yes')
+
+    const items = this.model.getData("DayOfTheWeek", "all", 2001);
+
+    for (let item of items){
+        console.log(JSON.stringify(item, null, 2))
+    }
+    //console.log(JSON.stringify(DataModel.CategorizeItems(items), null, 2))
+}
+
+
+
 function loadPage(){
 
   //Read in cause of death data
