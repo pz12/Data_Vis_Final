@@ -27,7 +27,8 @@ class USmap {
     }
 
 update(year) {
-  console.log(year)
+  yes = datamodel.getData("all", "all", year)
+  console.log(yes)
   //Use this tool tip element to handle any hover over the chart
   let tip = d3.tip().attr('class', 'd3-tip')
       .direction('se')

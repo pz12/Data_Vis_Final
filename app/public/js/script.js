@@ -1,11 +1,12 @@
 
 let CofDeath = new CausesOfDeath();
 let USMap = new USmap();
+let datamodel;
 
 d3.json("data/ProjectData.json", (d)=>{
   // console.log(d)
-   let datamodel = new DataModel(d);
-   USMap.update('1991')
+   datamodel = new DataModel(d);
+   USMap.update('1999')
 
     // beginTest()
 });
