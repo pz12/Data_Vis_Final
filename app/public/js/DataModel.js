@@ -23,7 +23,7 @@ class DataModel{
         this.possibleYears = Object.keys(dataObj.States[this.possibleStates[0]].Years);
         this.possibleCategories= ["DayOfTheWeek", "Gender", "PlaceOfDeath", "Race", "Totals"]
 
-    }    
+    }
 
     //The following method will extract the requested data from the data model and return a list of objects that meet
     // the query criteria. For example to obtain the gender data for Alabama for 1999 the call would be
@@ -31,6 +31,7 @@ class DataModel{
     // to get race data for all years for all states the call would be `getData("Race", "all", "all")`. Year may
     // specified as a number or a string.
     getData(categorySpecifier, stateSpecifier, yearSpecifier){
+      console.log("getData is being called")
         stateSpecifier = stateSpecifier.toString();
         yearSpecifier = yearSpecifier.toString();
         if (this.possibleCategories.indexOf(categorySpecifier) == -1 && categorySpecifier != "all"){
@@ -131,6 +132,7 @@ class DataModel{
             }
 
         }
+        console.log(outputObjects)
         return outputObjects;
     }
 
@@ -164,7 +166,7 @@ class DataModel{
                 categorizedItems.Totals.push(item)
             }
             else {
-                throw Error(`Runtime Error: The following object could not be matched to a 
+                throw Error(`Runtime Error: The following object could not be matched to a
                 category type: ${JSON.stringify(item, null, 2)} `)
             }
         }

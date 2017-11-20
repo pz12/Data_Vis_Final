@@ -25,7 +25,7 @@ class CausesOfDeath {
 
 
 update(codData){
-
+  console.log(codData)
       //let NumDeaths = parseInt(codData.Num_Deaths);
 
       let codDataSrt = codData.sort(function (a, b) {
