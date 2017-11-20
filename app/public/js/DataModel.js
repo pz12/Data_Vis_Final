@@ -34,8 +34,10 @@ class DataModel{
         stateSpecifier = stateSpecifier.toString();
         yearSpecifier = yearSpecifier.toString();
         if (this.possibleCategories.indexOf(categorySpecifier) == -1 && categorySpecifier != "all"){
+            let list = this.possibleCategories.slice(0);
+            list.push("all");
             throw Error(`Invalid Argument: ${categorySpecifier} is not a valid data category. 
-            The following is a list of valid data categories: ${this.possibleCategories.push("all")}`)
+            The following is a list of valid data categories: ${list.toString()}`)
         }
         if (this.possibleStates.indexOf(stateSpecifier) == -1 && stateSpecifier != "all"){
             throw Error(`Invalid Argument: ${stateSpecifier} is not a valid state name.`)
@@ -59,12 +61,15 @@ class DataModel{
                     }
                 }
                 else{
-                    // Year and state are "all", category is not
-                    if (categorySpecifier == "Totals"){
-                        throw Error('InvalidArgument: "Totals" for all states and all years was requested, however this ' +
-                            'data was not downloaded and is therefore not available. Call Max if you have beef.')
-                    }
-                    outputObjects.push(...this.data[categorySpecifier + "Rates"])
+                    // Pull the by-state all-year totals and add a "state" field to each object.
+                    Object.keys(this.data.States).forEach((stateName, index)=>{
+                        let stateObj = this.data.States[stateName];
+                        let requestedObjs = stateObj[categorySpecifier + "Rates"];
+                        for (let indivObj of requestedObjs){
+                            indivObj.State = stateName;
+                        }
+                        outputObjects.push(...requestedObjs)
+                    });
                 }
             }
             else {
