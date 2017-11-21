@@ -1,6 +1,7 @@
 import json
 import glob
 import re
+import pickle
 
 DataCategories = {
     "Gender" : "Crude Rate",
@@ -12,6 +13,7 @@ DataCategories = {
 
 DATA_DIR_PATH = "../RawData/NewCodesClean/*"
 OUT_FILEPATH = "../ProcessedData/ProjectData.json"
+STATE_POSITIONS_PATH = "../ProcessedData/StatePositions.pkl"
 
 def filterFiles(filterString, dirPath=DATA_DIR_PATH):
     allFiles = glob.glob(dirPath)
@@ -41,6 +43,9 @@ def filterObjKeys(keysToRemove, obj):
         if key not in keysToRemove:
             cleanObj[key] = value
     return cleanObj
+
+# Read in the state positions
+statePositions = pickle.load(open(STATE_POSITIONS_PATH, 'rb'))
 
 # create the master dictionary that will be dumped to JSON.
 master = {}
@@ -124,7 +129,54 @@ for categoryName in DataCategories.keys():
             yearsDict[datum["Year"]] = singleYearDict
         yearsDict[datum["Year"]][categoryName + "Rates"].append(filterObjKeys(keysToRemove, datum))
 
+# Process level 5 (Cause of Death)
+# This data has no spacial granularity, it is only organized by year.
+master["CauseOfDeathRates"] = []
+causeOfDeathObj = master["CauseOfDeathRates"]
+filenameRegex = "Cause_of_Death"
+filteredPaths = filterFiles(filenameRegex, dirPath="../RawData/CauseOfDeathClean/*")
+filenameRegex = re.compile("Cause_of_Death_(\d\d\d\d).txt")
+aggregateObj = {}
 
+for filepath in filteredPaths:
+    objects = tsv(filepath, "CauseOfDeath")
+    match = filenameRegex.search(filepath)
+    year = match.group(1)
+    yearObj = yearsDict[year]
+    yearObj["CauseOfDeathRates"] = []
+    yearObj["CauseOfDeathRates"].extend(objects)
+    for codObj in objects:
+        if codObj["ICD_Code"] not in aggregateObj:
+            aggregateObj[codObj["ICD_Code"]] = {"ICD_Code" : codObj["ICD_Code"],
+                                                "Cause_of_Death" : codObj["Cause_of_Death"],
+                                                "Num_Deaths" : 0}
+        aggregateObj[codObj["ICD_Code"]]["Num_Deaths"] += int(codObj["Num_Deaths"])
+
+for key in aggregateObj.keys():
+    obj = aggregateObj[key]
+    obj["Num_Deaths"] = str(obj["Num_Deaths"])
+
+causeOfDeathObj.extend(aggregateObj.values())
+
+#Process level 6 (State positions)
+# Add state positions to state all-year totals and state by-year totals
+statesDict = master["States"]
+for stateName in statesDict.keys():
+    stateRow = statePositions[stateName]["Row"]
+    stateSpace = statePositions[stateName]["Space"]
+    totalsList = statesDict[stateName]["TotalsRates"]
+    for totalsObj in totalsList:
+        totalsObj["State"] = stateName
+        totalsObj["Row"] = stateRow
+        totalsObj["Space"] = stateSpace
+    stateYearsDict = statesDict[stateName]["Years"]
+    for year in stateYearsDict.keys():
+        totalsList = stateYearsDict[year]["TotalsRates"]
+        for totalsObj in totalsList:
+            totalsObj["State"] = stateName
+            totalsObj["Row"] = stateRow
+            totalsObj["Space"] = stateSpace
+            totalsObj["Year"] = year
 
 
 with open(OUT_FILEPATH, 'w') as f:

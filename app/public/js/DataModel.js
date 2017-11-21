@@ -21,7 +21,7 @@ class DataModel{
         //Get list of possible years
         this.possibleStates = Object.keys(dataObj.States);
         this.possibleYears = Object.keys(dataObj.States[this.possibleStates[0]].Years);
-        this.possibleCategories= ["DayOfTheWeek", "Gender", "PlaceOfDeath", "Race", "Totals"]
+        this.possibleCategories= ["CauseOfDeath", "DayOfTheWeek", "Gender", "PlaceOfDeath", "Race", "Totals"]
 
     }
 
@@ -48,6 +48,15 @@ class DataModel{
         }
 
         const outputObjects = [];
+        if (categorySpecifier == "CauseOfDeath"){
+            if (yearSpecifier == "all"){
+                outputObjects.push(...this.data[categorySpecifier + "Rates"])
+            }
+            else {
+                outputObjects.push(...this.data.Years[yearSpecifier][categorySpecifier + "Rates"])
+            }
+            return outputObjects
+        }
         if (yearSpecifier == "all"){
             if (stateSpecifier == "all"){
                 if (categorySpecifier == "all"){
@@ -208,6 +217,18 @@ class DataModel{
 
 // The following is an abridged version of the raw JSON dataObj
 dataObjSummary = {
+    "CauseOfDeathRates": [
+        {
+            "Cause_of_Death": "Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances",
+            "ICD_Code": "X44",
+            "Num_Deaths": "204908"
+        },
+        {
+            "Cause_of_Death": "Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system",
+            "ICD_Code": "X43",
+            "Num_Deaths": "358"
+        }
+    ],
     "DayOfTheWeekRates": [
         {
             "Deaths": "85463",
@@ -340,6 +361,18 @@ dataObjSummary = {
             ],
             "Years": {
                 "1999": {
+                    "CauseOfDeathRates": [
+                        {
+                            "Cause_of_Death": "Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified",
+                            "ICD_Code": "X41",
+                            "Num_Deaths": "671"
+                        },
+                        {
+                            "Cause_of_Death": "Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified",
+                            "ICD_Code": "X42",
+                            "Num_Deaths": "6009"
+                        }
+                    ],
                     "DayOfTheWeekRates": [
                         {
                             "Deaths": "30",

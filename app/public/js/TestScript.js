@@ -4,11 +4,11 @@
 
 d3.json("/app/data/ProjectData.json", (d)=>{
    this.model = new DataModel(d);
-    beginTest()
+   beginTest()
 });
 
 function beginTest(){
-    const items = this.model.getData("Gender", "all", 2003);
+    const items = this.model.getData("Totals", "all", "all");
     for (let item of items){
         console.log(JSON.stringify(item, null, 2))
     }
