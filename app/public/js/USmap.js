@@ -20,7 +20,7 @@ class USmap {
     tooltip_render(tooltip_data) {
         let text = "<h2 class ='yes' >" + tooltip_data.state + "</h2>";
         text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
-        text += "<div>Rate per 100,000: " + tooltip_data.rate+"%</div>";
+        text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
 
 
         return text;

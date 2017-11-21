@@ -1,4 +1,5 @@
 
+
 class DaysOfWeek {
 
   constructor() {
@@ -11,10 +12,10 @@ class DaysOfWeek {
         .style('border', 'gray solid 1px')
   }
 
-  update(daysData) {
+  update(year) {
 
     console.log('Days of week loading')
-    let daysData = datamodel.getData("DayOfTheWeek", "all", "all")
+    let daysData = datamodel.getData("DayOfTheWeek", "all", year)
     console.log(daysData)
 
       let radiusScale = d3.scaleLinear()
