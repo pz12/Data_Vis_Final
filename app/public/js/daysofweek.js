@@ -17,6 +17,8 @@ class DaysOfWeek {
     console.log('Days of week loading')
     let daysData = datamodel.getData("DayOfTheWeek", "all", year)
     console.log(daysData)
+    daysData = datamodel.getData("DayOfTheWeek", "all", 2007)
+    console.log(daysData)
 
       let radiusScale = d3.scaleLinear()
                           .domain([0, d3.max(daysData, d => d['Deaths'])])
@@ -25,7 +27,7 @@ class DaysOfWeek {
     let radius_mean = d3.mean(daysData, d => d['Deaths'])
 
     var line = d3.lineRadial()
-      .radius(function(d, i){ console.log(d); return radiusScale(d.deaths) ; })
+      .radius(function(d, i){ return radiusScale(d.deaths) ; })
       .angle(function(d){ return d.angle * (Math.PI/180) ; })
         // .curve(d3.curveLinear);
       .curve(d3.curveCardinalClosed);

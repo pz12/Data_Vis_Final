@@ -1,13 +1,21 @@
 
 let datamodel; //Global variable that any class can access
-let CofDeath = new CausesOfDeath();
-let weekdays = new DaysOfWeek();
-let USMap = new USmap();
+// let CofDeath = new CausesOfDeath();
+// let weekdays = new DaysOfWeek();
+// let USMap = new USmap();
+let CofDeath;
+let weekdays;
+let USMap;
 
 d3.json("data/ProjectData.json", (d)=>{
   // console.log(d)
 
+
+
    datamodel = new DataModel(d);
+   CofDeath = new CausesOfDeath();
+   weekdays = new DaysOfWeek();
+   USMap = new USmap();
    weekdays.update('1999');
    USMap.update('1999');
 
