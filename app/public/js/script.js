@@ -6,8 +6,8 @@ let datamodel; //Global variable that any class can access
 let CofDeath;
 let weekdays;
 let USMap;
-let Race;
-let Gender;
+let race;
+let gender;
 
 d3.json("data/ProjectData.json", (d)=>{
   // console.log(d)
@@ -20,9 +20,11 @@ d3.json("data/ProjectData.json", (d)=>{
    USMap = new USmap();
    race = new Race();
    gender = new Gender();
-   weekdays.update('1999');
-   USMap.update('1999');
-
+   var initial_year = '1999';
+   weekdays.update(initial_year);
+   USMap.update(initial_year);
+   race.update(initial_year);
+   gender.update(initial_year);
     // beginTest()
 });
 
@@ -30,6 +32,8 @@ function changeYear(year) {
   console.log(year)
   weekdays.update(year);
   USMap.update(year);
+  race.update(initial_year);
+  gender.update(initial_year);
 }
 d3.csv("data/Cause_of_Death_2000.csv", function(error, codData){
     //CofDeath.update(codData);
