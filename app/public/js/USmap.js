@@ -28,28 +28,28 @@ class USmap {
 
 update(year) {
   console.log('US map loading')
-  let yes = datamodel.getData("Totals", "all","all")
-  console.log(yes)
+  let stateResults = datamodel.getData("Totals", "all","all")
+  console.log(stateResults)
   //Use this tool tip element to handle any hover over the chart
-  let tip = d3.tip().attr('class', 'd3-tip')
-      .direction('se')
-      .offset(function() {
-          return [0,0];
-      })
-      .html((d)=>{
-          // populate data in the following format
-          let tooltip_data = {
-              "state": d.State,
-              "deaths":d.Deaths,
-              "rate" : d['Crude Rate']
-            }
-
-           // pass this as an argument to the tooltip_render function then,
-           // return the HTML content returned from that method.
-
-          return this.tooltip_render(tooltip_data);
-      });
-      this.svg.call(tip)
+  // let tip = d3.tip().attr('class', 'd3-tip')
+  //     .direction('se')
+  //     .offset(function() {
+  //         return [0,0];
+  //     })
+  //     .html((d)=>{
+  //         // populate data in the following format
+  //         let tooltip_data = {
+  //             "state": d.State,
+  //             "deaths":d.Deaths,
+  //             "rate" : d['Crude Rate']
+  //           }
+  //
+  //          // pass this as an argument to the tooltip_render function then,
+  //          // return the HTML content returned from that method.
+  //
+  //         return this.tooltip_render(tooltip_data);
+  //     });
+  //     this.svg.call(tip)
 
 let results;
 
@@ -80,8 +80,8 @@ let radiusScale = d3.scaleLinear()
                   .attr('fill', 'red')
                   .attr('stroke', 'black')
                   .attr('class', 'tile')
-                  .on('mouseover', tip.show)
-                  .on('mouseout', tip.hide)
+                  // .on('mouseover', tip.show)
+                  // .on('mouseout', tip.hide)
 
 
 

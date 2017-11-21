@@ -13,6 +13,10 @@ d3.json("data/ProjectData.json", (d)=>{
 
     // beginTest()
 });
+
+function changeYear(year) {
+  
+}
 d3.csv("data/Cause_of_Death_2000.csv", function(error, codData){
     //CofDeath.update(codData);
 });
