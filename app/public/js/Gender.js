@@ -1,0 +1,12 @@
+
+class Gender {
+
+  constructor() {
+
+  }
+
+  update() {
+
+  }
+
+}
