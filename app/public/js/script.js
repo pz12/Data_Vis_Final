@@ -1,12 +1,12 @@
 
 let datamodel; //Global variable that any class can access
-
+let CofDeath = new CausesOfDeath();
+let weekdays = new DaysOfWeek();
+let USMap = new USmap();
 
 d3.json("data/ProjectData.json", (d)=>{
   // console.log(d)
-  let CofDeath = new CausesOfDeath();
-  let weekdays = new DaysOfWeek();
-  let USMap = new USmap();
+
    datamodel = new DataModel(d);
    weekdays.update('1999');
    USMap.update('1999');
@@ -15,7 +15,9 @@ d3.json("data/ProjectData.json", (d)=>{
 });
 
 function changeYear(year) {
-  
+  console.log(year)
+  weekdays.update(year);
+  USMap.update(year);
 }
 d3.csv("data/Cause_of_Death_2000.csv", function(error, codData){
     //CofDeath.update(codData);
