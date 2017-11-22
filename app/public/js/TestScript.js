@@ -8,7 +8,7 @@ d3.json("/app/data/ProjectData.json", (d)=>{
 });
 
 function beginTest(){
-    const items = this.model.getData("Totals", "all", "all");
+    const items = this.model.getData("DayOfTheWeek", "all", 2003);
     for (let item of items){
         console.log(JSON.stringify(item, null, 2))
     }
