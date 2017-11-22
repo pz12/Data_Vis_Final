@@ -28,7 +28,7 @@ class USmap {
 
 update(year) {
   console.log('US map loading')
-  let stateResults = datamodel.getData("Totals", "all","all")
+  let stateResults = datamodel.getData("Totals", "all",year)
   console.log(stateResults)
   //Use this tool tip element to handle any hover over the chart
   let tip = d3.tip().attr('class', 'd3-tip')
@@ -52,12 +52,17 @@ update(year) {
       this.svg.call(tip)
 
 let results;
+for(let i=0; i<stateResults.length; i++) {
+  if(stateResults[i]['Crude Rate'] == 'Unreliable') {
+    stateResults[i]['Crude Rate'] = "2.0";
+  }
+}
 
 let radiusScale = d3.scaleLinear()
                     .domain([0, d3.max(stateResults, d => d['Crude Rate'])])
                     .range([0,8]);
 
-
+  this.svg.selectAll('circle').remove()
   this.svg.selectAll('circle')
                   .data(stateResults)
                   .enter()
@@ -71,12 +76,6 @@ let radiusScale = d3.scaleLinear()
                   .attr('r', (d) => {
                     return radiusScale(d['Crude Rate']);
                   })
-                  // .attr('width', (d) => {
-                  //   return Math.random() * (50 - 40) + 40;
-                  // })
-                  // .attr('height', (d) => {
-                  //   return Math.random() * (50 - 40) + 40;
-                  // })
                   .attr('fill', 'red')
                   .attr('stroke', 'black')
                   .attr('class', 'tile')

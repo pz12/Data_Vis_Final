@@ -5,7 +5,7 @@ class Gender {
 
   }
 
-  update(year) {
+  update(year, state) {
 
   }
 

@@ -5,7 +5,7 @@ class Race {
 
   }
 
-  update(year) {
+  update(year, state) {
 
   }
 
