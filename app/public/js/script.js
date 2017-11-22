@@ -29,12 +29,35 @@ d3.json("data/ProjectData.json", (d)=>{
 });
 
 function changeYear(year) {
-  console.log(year)
-  weekdays.update(year, state);
+  weekdays.update(year, "all");
   USMap.update(year);
-  race.update(year);
-  gender.update(year);
+  race.update(year, "all");
+  gender.update(year, "all");
 }
-d3.csv("data/Cause_of_Death_2000.csv", function(error, codData){
-    //CofDeath.update(codData);
-});
+
+function update(t) {
+  console.log(t)
+}
+
+var myTimer;
+
+function play() {
+
+  clearInterval (myTimer);
+  myTimer = setInterval (function() {
+       // var b= d3.select("#rangeSlider");
+       // var t = (+b.property("value") + 1) % (+b.property("max") + 1);
+       // if (t == 0) { t = +b.property("min"); }
+       // b.property("value", t);
+       // alert(t);
+     }, 1000);
+}
+
+function pause() {
+  clearInterval (myTimer);
+}
+
+
+// d3.csv("data/Cause_of_Death_2000.csv", function(error, codData){
+//     //CofDeath.update(codData);
+// });
