@@ -135,7 +135,7 @@ class DataModel{
                         });
                     }
                     else {
-                        outputObjects.push(...this.data[categorySpecifier + "Rates"])
+                        outputObjects.push(...yearObj[categorySpecifier + "Rates"])
                     }
                 }
             }
