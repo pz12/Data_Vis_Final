@@ -12,6 +12,8 @@
       <script type="application/javascript" src="public/js/CausesOfDeath.js" ></script>
       <script type="application/javascript" src="public/js/DaysOfWeek.js" ></script>
       <script type="application/javascript" src="public/js/DataModel.js" ></script>
+      <script type="application/javascript" src="public/js/Race.js" ></script>
+      <script type="application/javascript" src="public/js/Gender.js" ></script>
       <script type="application/javascript" src="public/js/script.js" ></script>
   </head>
 
@@ -24,8 +26,8 @@
     </header>
 
     <div id="slider">
-      <input type='range' min='0' max='17' step='1' value='0' id='rangeSlider'
-        onChange="changeYear()"/>
+      <input type='range' min='1999' max='2015' step='1' value='1999' id='rangeSlider'
+        onChange="changeYear(this.value)"/>
         <img src="public/images/play.png" id="play_button"/>
         <img src="public/images/pause.png" id="pause_button"/>
     </div>
