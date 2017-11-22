@@ -84,22 +84,8 @@ let radiusScale = d3.scaleLinear()
 
 
 
-    // https://stackoverflow.com/questions/34934577/html-range-slider-with-play-pause-loop
-    var myTimer;
-    d3.select("#play_button").on("click", function() {
-     clearInterval (myTimer);
-    	myTimer = setInterval (function() {
-        	var b= d3.select("#rangeSlider");
-          var t = (+b.property("value") + 1) % (+b.property("max") + 1);
-          if (t == 0) { t = +b.property("min"); }
-          b.property("value", t);
-          //update (t);
-        }, 1000);
-    });
+    
 
-    d3.select("#pause_button").on("click", function() {
-    	clearInterval (myTimer);
-    });
 
 // console.log(results)
 }

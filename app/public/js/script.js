@@ -35,21 +35,24 @@ function changeYear(year) {
   gender.update(year, "all");
 }
 
-function update(t) {
-  console.log(t)
+function update(year) {
+  weekdays.update(year, "all");
+  USMap.update(year);
+  race.update(year, "all");
+  gender.update(year, "all");
 }
 
+// https://stackoverflow.com/questions/34934577/html-range-slider-with-play-pause-loop
 var myTimer;
 
 function play() {
-
   clearInterval (myTimer);
   myTimer = setInterval (function() {
-       // var b= d3.select("#rangeSlider");
-       // var t = (+b.property("value") + 1) % (+b.property("max") + 1);
-       // if (t == 0) { t = +b.property("min"); }
-       // b.property("value", t);
-       // alert(t);
+       var b= d3.select("#rangeSlider");
+       var t = (+b.property("value") + 1) % (+b.property("max") + 1);
+       if (t == 0) { t = +b.property("min"); }
+       b.property("value", t);
+       update(t);
      }, 1000);
 }
 
