@@ -129,10 +129,12 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 50%;
 }
 
-
-
 .tooltip-title{
     font-size:18px;
     font-family: "Arial Black";
+}
+
+.USmapLegendText {
+  font-family: "sans serif";
 
 }

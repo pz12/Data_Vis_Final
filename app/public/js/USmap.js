@@ -4,11 +4,85 @@ class USmap {
 
   constructor() {
     this.width = 850;
-    this.height = 800;
+    this.height = 470;
     this.svg = d3.select('#USmap')
               .append('svg')
               .attr('width', this.width)
               .attr('height', this.height)
+
+    // LEGEND
+    var legend_color = 'gray';
+    var legend_y = 70;
+    var tick_height = 10;
+    var tick_place = legend_y + tick_height
+    var legend_x_start = 350;
+    var legend_width = 96; //equivalent to a crude rate of 40
+    var legend_x_end = legend_x_start+legend_width;
+    var halfway = legend_width/2+legend_x_start;
+    this.svg.append('path')
+            .attr('d', (d) => {
+              return 'M'+legend_x_start+','+legend_y+'L'+legend_x_end+','+legend_y;
+            })
+           .attr('stroke', legend_color)
+           .attr('stroke-width', 2)
+           .attr('fill', 'none')
+   this.svg.append('path')
+           .attr('d', (d) => {
+             return 'M'+legend_x_end+','+tick_place+'L'+legend_x_end+','+legend_y;
+           })
+          .attr('stroke', legend_color)
+          .attr('stroke-width', 2)
+          .attr('fill', 'none')
+    this.svg.append('path')
+            .attr('d', (d) => {
+              return 'M'+legend_x_start+','+tick_place+'L'+legend_x_start+','+legend_y;
+            })
+           .attr('stroke', legend_color)
+           .attr('stroke-width', 2)
+           .attr('fill', 'none')
+   this.svg.append('path')
+           .attr('d', (d) => {
+             return 'M'+halfway+','+tick_place+'L'+halfway+','+legend_y;
+           })
+          .attr('stroke', legend_color)
+          .attr('stroke-width', 2)
+          .attr('fill', 'none')
+    this.svg.append('text')
+          .text('0')
+          .attr('x', (d) => {
+            return legend_x_start-4;
+          })
+          .attr('y', (d) => {
+            return tick_place+15;
+          })
+          .attr('class', 'USmapLegendText')
+    this.svg.append('text')
+          .text('20')
+          .attr('x', (d) => {
+            return halfway-8;
+          })
+          .attr('y', (d) => {
+            return tick_place+15;
+          })
+          .attr('class', 'USmapLegendText')
+    this.svg.append('text')
+          .text('40')
+          .attr('x', (d) => {
+            return legend_x_end-8;
+          })
+          .attr('y', (d) => {
+            return tick_place+15;
+          })
+          .attr('class', 'USmapLegendText')
+    this.svg.append('text')
+          .text('Crude Rate (per 100,000)')
+          .attr('x', (d) => {
+            return legend_x_start-25;
+          })
+          .attr('y', (d) => {
+            return tick_place-20;
+          })
+          .attr('class', 'USmapLegendText')
   }
 
   /**
@@ -29,6 +103,7 @@ class USmap {
 update(year) {
   console.log('US map loading')
   let stateResults = datamodel.getData("Totals", "all",year)
+  console.log(datamodel.getData("Totals", "West Virginia",'2015'))
   console.log(stateResults)
   //Use this tool tip element to handle any hover over the chart
   let tip = d3.tip().attr('class', 'd3-tip')
@@ -59,8 +134,8 @@ for(let i=0; i<stateResults.length; i++) {
 }
 
 let radiusScale = d3.scaleLinear()
-                    .domain([0, d3.max(stateResults, d => d['Crude Rate'])])
-                    .range([0,8]);
+                    .domain([0, 10])
+                    .range([0,12]);
 
   this.svg.selectAll('circle').remove()
   this.svg.selectAll('circle')
@@ -68,10 +143,10 @@ let radiusScale = d3.scaleLinear()
                   .enter()
                   .append('circle')
                   .attr('cx', (d) => {
-                    return d.Space*50+50;
+                    return d.Space*70+25;
                   })
                   .attr('cy', (d) => {
-                    return d.Row*40+50;
+                    return d.Row*60+25;
                   })
                   .attr('r', (d) => {
                     return radiusScale(d['Crude Rate']);
@@ -81,6 +156,17 @@ let radiusScale = d3.scaleLinear()
                   .attr('class', 'tile')
                   .on('mouseover', tip.show)
                   .on('mouseout', tip.hide)
+
+  // var line = d3.svg.line()
+  //                .x(function(d) { return radiusScale(d['x']); })
+  //                .y(function(d) { return radiusScale(d['y']); });
+  // this.svg.append('line')
+  //         .data([{'x': 1, 'y': 3},
+  //               {'x': 2, 'y': 5}])
+  //         .attr('d', line)
+  //         .attr('stroke', 'gray')
+  //         .attr('stroke-width', 2)
+  //         .attr('fill', 'none')
 
 
 
