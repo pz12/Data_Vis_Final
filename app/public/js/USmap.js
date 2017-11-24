@@ -101,10 +101,7 @@ class USmap {
     }
 
 update(year) {
-  console.log('US map loading')
   let stateResults = datamodel.getData("Totals", "all",year)
-  console.log(datamodel.getData("Totals", "West Virginia",'2015'))
-  console.log(stateResults)
   //Use this tool tip element to handle any hover over the chart
   let tip = d3.tip().attr('class', 'd3-tip')
       .direction('se')
@@ -137,11 +134,25 @@ let radiusScale = d3.scaleLinear()
                     .domain([0, 10])
                     .range([0,12]);
 
-  this.svg.selectAll('circle').remove()
-  this.svg.selectAll('circle')
-                  .data(stateResults)
-                  .enter()
-                  .append('circle')
+
+  let uschart = this.svg.selectAll('circle')
+                  .data(stateResults);
+          uschart.exit()
+                .transition()
+                .duration(500)
+                .remove()
+          uschart = uschart.enter().append('circle')
+                            .attr('class', 'tile')
+                            .on('mouseover', tip.show)
+                            .on('mouseout', tip.hide)
+                            .on('click', function(d) {
+                              weekdays.update(year, d.State);
+                              race.update(year, d.State);
+                              gender.update(year, d.State);
+                            })
+                            .merge(uschart);
+          uschart.transition()
+                  .duration(500)
                   .attr('cx', (d) => {
                     return d.Space*70+25;
                   })
@@ -153,9 +164,7 @@ let radiusScale = d3.scaleLinear()
                   })
                   .attr('fill', 'red')
                   .attr('stroke', 'black')
-                  .attr('class', 'tile')
-                  .on('mouseover', tip.show)
-                  .on('mouseout', tip.hide)
+
 
   // var line = d3.svg.line()
   //                .x(function(d) { return radiusScale(d['x']); })
