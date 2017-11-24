@@ -3,7 +3,7 @@
 class USmap {
 
   constructor() {
-    this.width = 850;
+    this.width = 1200;
     this.height = 800;
     this.svg = d3.select('#USmap')
               .append('svg')
@@ -20,16 +20,14 @@ class USmap {
     tooltip_render(tooltip_data) {
         let text = "<h2 class ='yes' >" + tooltip_data.state + "</h2>";
         text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
-        text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
+        text += "<div>Rate per 100,000: " + tooltip_data.rate+"%</div>";
 
 
         return text;
     }
 
-update(year) {
-  console.log('US map loading')
-  let stateResults = datamodel.getData("Totals", "all",year)
-  console.log(stateResults)
+update(stateResults) {
+
   //Use this tool tip element to handle any hover over the chart
   let tip = d3.tip().attr('class', 'd3-tip')
       .direction('se')
@@ -52,17 +50,14 @@ update(year) {
       this.svg.call(tip)
 
 let results;
-for(let i=0; i<stateResults.length; i++) {
-  if(stateResults[i]['Crude Rate'] == 'Unreliable') {
-    stateResults[i]['Crude Rate'] = "2.0";
-  }
-}
+
+
 
 let radiusScale = d3.scaleLinear()
                     .domain([0, d3.max(stateResults, d => d['Crude Rate'])])
                     .range([0,8]);
 
-  this.svg.selectAll('circle').remove()
+
   this.svg.selectAll('circle')
                   .data(stateResults)
                   .enter()
@@ -76,6 +71,12 @@ let radiusScale = d3.scaleLinear()
                   .attr('r', (d) => {
                     return radiusScale(d['Crude Rate']);
                   })
+                  // .attr('width', (d) => {
+                  //   return Math.random() * (50 - 40) + 40;
+                  // })
+                  // .attr('height', (d) => {
+                  //   return Math.random() * (50 - 40) + 40;
+                  // })
                   .attr('fill', 'red')
                   .attr('stroke', 'black')
                   .attr('class', 'tile')
@@ -84,8 +85,22 @@ let radiusScale = d3.scaleLinear()
 
 
 
+    // https://stackoverflow.com/questions/34934577/html-range-slider-with-play-pause-loop
+    var myTimer;
+    d3.select("#play_button").on("click", function() {
+     clearInterval (myTimer);
+    	myTimer = setInterval (function() {
+        	var b= d3.select("#rangeSlider");
+          var t = (+b.property("value") + 1) % (+b.property("max") + 1);
+          if (t == 0) { t = +b.property("min"); }
+          b.property("value", t);
+          //update (t);
+        }, 1000);
+    });
 
-
+    d3.select("#pause_button").on("click", function() {
+    	clearInterval (myTimer);
+    });
 
 // console.log(results)
 }
