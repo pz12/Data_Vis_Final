@@ -25,6 +25,7 @@ d3.json("data/ProjectData.json", (d)=>{
    USMap.update(initial_year);
    race.update(initial_year, "all");
    gender.update(initial_year, "all");
+   CofDeath.update(initial_year);
     // beginTest()
 });
 
@@ -33,6 +34,7 @@ function changeYear(year) {
   USMap.update(year);
   race.update(year, "all");
   gender.update(year, "all");
+  CofDeath.update(year);
 }
 
 function update(year) {
@@ -40,6 +42,7 @@ function update(year) {
   USMap.update(year);
   race.update(year, "all");
   gender.update(year, "all");
+  CofDeath.update(year);
 }
 
 // https://stackoverflow.com/questions/34934577/html-range-slider-with-play-pause-loop

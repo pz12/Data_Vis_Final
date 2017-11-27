@@ -9,9 +9,7 @@ class CausesOfDeath {
 
     //Initializes the svg elements required for this chart;
 
-     constructor(codData){
-
-         this.codData = codData;
+     constructor(){
 
          this.margin = {top: 30, right: 20, bottom: 30, left: 50};
          this.svgWidth = 600;
@@ -24,9 +22,8 @@ class CausesOfDeath {
      }
 
 
-update(codData){
-  console.log(codData)
-      //let NumDeaths = parseInt(codData.Num_Deaths);
+update(year){
+  let codData = datamodel.getData("CauseOfDeath", "all",year)
 
       let codDataSrt = codData.sort(function (a, b) {
         return b.Num_Deaths - a.Num_Deaths;
@@ -40,7 +37,7 @@ update(codData){
       //         // Create colorScale
               let colorScale = d3.scaleLinear()
                       .domain([0, d3.max(codData, d => parseInt(d.Num_Deaths))])
-                      .range(["green", "red"]);
+                      .range(["grey", "red"]);
 
       // Define the div for the tooltip
       let div = d3.select("#topTen").append("div")
@@ -83,9 +80,5 @@ update(codData){
                   })
 
       };
-
-
-
-
 
 }
