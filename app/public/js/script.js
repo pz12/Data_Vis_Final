@@ -53,9 +53,11 @@ function update(year, state) {
 
 // https://stackoverflow.com/questions/34934577/html-range-slider-with-play-pause-loop
 var myTimer;
+var timerBool;
 
 function play() {
   clearInterval (myTimer);
+  timerBool = false;
   var state = "all";
   if(d3.select('.activeState')['_groups'][0][0]) {
     state = d3.select('.activeState')['_groups'][0][0]['__data__'].State;
@@ -67,13 +69,17 @@ function play() {
        b.property("value", t);
        update(t, state);
      }, 1000);
+  timerBool = true;
 }
 
 function pause() {
   clearInterval (myTimer);
+  timerBool = false;
 }
 
 function allStates() {
+  var tempbool = timerBool;
+
   pause();
   var year = current_year;
   d3.selectAll('.activeState').classed("activeState", false);
@@ -81,6 +87,9 @@ function allStates() {
   weekdays.update(year, "all");
   race.update(year, "all");
   gender.update(year, "all");
+  if(tempbool==true) {
+    play();
+  }
 }
 
 
