@@ -60,13 +60,13 @@ class DaysOfWeek {
   daysData.forEach(function(d, i) {
     data.push({"deaths":parseInt(d.Deaths), "angle":angles[i]});
   })
-  let average = this.svg.select('circle');
-  average
+  let average = this.svg.select('circle').datum(radius_mean);
+  average.exit()
       .transition()
       .duration(500)
       .remove()
   // average = average.append('circle');
-average = average.append('circle')
+average = average.enter().append('circle').merge(average);
 average
   .transition()
        .duration(500)

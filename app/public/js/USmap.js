@@ -149,6 +149,9 @@ let radiusScale = d3.scaleLinear()
                               weekdays.update(year, d.State);
                               race.update(year, d.State);
                               gender.update(year, d.State);
+                              pause()
+                              d3.selectAll('.activeState').classed("activeState", false)
+                              d3.select(this).classed("activeState", true)
                             })
                             .merge(uschart);
           uschart.transition()

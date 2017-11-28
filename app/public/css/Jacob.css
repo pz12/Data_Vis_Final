@@ -141,3 +141,6 @@ input[type=range]:focus::-ms-fill-upper {
 .tile {
   cursor: pointer;
 }
+.activeState {
+  fill: blue;
+}

@@ -8,6 +8,7 @@ let weekdays;
 let USMap;
 let race;
 let gender;
+var current_year;
 
 d3.json("data/ProjectData.json", (d)=>{
   // console.log(d)
@@ -21,6 +22,7 @@ d3.json("data/ProjectData.json", (d)=>{
    race = new Race();
    gender = new Gender();
    var initial_year = '1999';
+   current_year = initial_year
    weekdays.update(initial_year, "all");
    USMap.update(initial_year);
    race.update(initial_year, "all");
@@ -29,7 +31,10 @@ d3.json("data/ProjectData.json", (d)=>{
     // beginTest()
 });
 
+
+
 function changeYear(year) {
+  current_year = year;
   weekdays.update(year, "all");
   USMap.update(year);
   race.update(year, "all");
@@ -38,6 +43,7 @@ function changeYear(year) {
 }
 
 function update(year) {
+  current_year = year;
   weekdays.update(year, "all");
   USMap.update(year);
   race.update(year, "all");
@@ -61,6 +67,15 @@ function play() {
 
 function pause() {
   clearInterval (myTimer);
+}
+
+function allStates() {
+  var year = current_year;
+  d3.selectAll('.activeState').classed("activeState", false);
+  console.log(year)
+  weekdays.update(year, "all");
+  race.update(year, "all");
+  gender.update(year, "all");
 }
 
 
