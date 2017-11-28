@@ -42,12 +42,12 @@ function changeYear(year) {
   CofDeath.update(year);
 }
 
-function update(year) {
+function update(year, state) {
   current_year = year;
-  weekdays.update(year, "all");
+  weekdays.update(year, state);
   USMap.update(year);
-  race.update(year, "all");
-  gender.update(year, "all");
+  race.update(year, state);
+  gender.update(year, state);
   CofDeath.update(year);
 }
 
@@ -56,12 +56,16 @@ var myTimer;
 
 function play() {
   clearInterval (myTimer);
+  var state = "all";
+  if(d3.select('.activeState')['_groups'][0][0]) {
+    state = d3.select('.activeState')['_groups'][0][0]['__data__'].State;
+  }
   myTimer = setInterval (function() {
        var b= d3.select("#rangeSlider");
        var t = (+b.property("value") + 1) % (+b.property("max") + 1);
        if (t == 0) { t = +b.property("min"); }
        b.property("value", t);
-       update(t);
+       update(t, state);
      }, 1000);
 }
 
