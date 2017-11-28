@@ -1,4 +1,5 @@
 
+// WE DON"T HAVE THE DAY OF THE WEEK DATA PERFECTLY
 
 class DaysOfWeek {
 
@@ -16,7 +17,7 @@ class DaysOfWeek {
 
   update(year, state) {
     let daysData = datamodel.getData("DayOfTheWeek", state, year)
-    // console.log(days)
+    console.log(daysData)
       let radiusScale = d3.scaleLinear()
                           .domain([0, d3.max(daysData, d => d['Deaths'])])
                           .range([0,100]);
@@ -92,18 +93,16 @@ average
       .attr('stroke-width', 3)
       .attr('fill', 'none')
       .attr('transform', 'translate(' + this.w/2 +','+ this.h/2 +')')
-      //.attr('d', line);
-
 
       this.svg.append('text')
-        .text('Days of the Week')
+        .text('Days of the Week (Incomplete)')
         .attr('x', (d) => {
           return this.w/2 - this.w/6;
         })
         .attr('y', 12)
         .attr('class', 'DOWtext')
       this.svg.append('text')
-        .text('(Total Deaths for Given Day)')
+        .text('(Total Deaths per Given Day)')
         .attr('x', (d) => {
           return this.w/2 - this.w/6+10;
         })

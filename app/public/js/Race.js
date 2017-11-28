@@ -7,7 +7,8 @@ class Race {
     this.svgWidth = 200;
     this.svgHeight = 300;
 
-    let divRaceChart = d3.select("#ethnicity");
+    let divRaceChart = d3.select("#ethnicity")
+
     this.svg = divRaceChart.append("svg")
                            .attr("width",this.svgWidth)
                            .attr("height",this.svgHeight);
@@ -68,6 +69,7 @@ class Race {
 
 
     let raceRect = this.svg
+                    .attr("transform","translate(0,0) scale(-1,-1)" )
                     .selectAll('rect')
                     .data(raceData);
       let raceRect_new = raceRect.enter().append('rect').on('mouseover', tip.show).on('mouseout', tip.hide);
