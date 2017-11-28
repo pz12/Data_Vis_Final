@@ -77,7 +77,7 @@ class Race {
       raceRect.exit().remove();
       raceRect = raceRect_new.merge(raceRect);
         raceRect.transition()
-                .duration(1000)
+                .duration(500)
                 .attr('y', 0)
                 .attr('x', function(d,i) {
                         return (i*35);
