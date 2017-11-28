@@ -85,11 +85,30 @@ average
     })
 
     // let data = daysData;
-    this.svg.selectAll('path').remove()
-    var path = this.svg.append('path')
-      .datum(data)
-      .attr('d', line)
+    // this.svg.selectAll('path').remove()
+    // var path = this.svg.append('path')
+    //   .datum(data)
+    //   .transition()
+    //   .duration(1000)
+    //   .attr('d', line)
+    //   .attr('stroke', 'green')
+    //   .attr('stroke-width', 3)
+    //   .attr('fill', 'none')
+    //   .attr('transform', 'translate(' + this.w/2 +','+ this.h/2 +')')
+
+    let path = this.svg.selectAll('path')
+                        .data([data]);
+
+  let path_new = path.enter().append('path')
+  path.exit().remove();
+  path = path_new.merge(path);
+
+  path
+  .transition()
+  .duration(1000)
+  .attr('d', line)
       .attr('stroke', 'green')
+      .attr('id','thisOne')
       .attr('stroke-width', 3)
       .attr('fill', 'none')
       .attr('transform', 'translate(' + this.w/2 +','+ this.h/2 +')')
