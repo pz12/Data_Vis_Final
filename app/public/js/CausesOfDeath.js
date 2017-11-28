@@ -32,7 +32,7 @@ update(year){
       // let totDeath = this.codDate.map(d=>{return d.Num_Deaths})
       let xScale = d3.scaleLinear()
                       .domain([0, d3.max(codData, d => parseInt(d.Num_Deaths))])
-                      .range([0, this.svgWidth]);
+                      .range([0, this.svgWidth-30]);
       //
       //         // Create colorScale
               let colorScale = d3.scaleLinear()
