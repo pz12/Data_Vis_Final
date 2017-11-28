@@ -74,8 +74,8 @@ class Race {
                     .selectAll('rect')
                     .data(raceData);
       let raceRect_new = raceRect.enter().append('rect').on('mouseover', tip.show).on('mouseout', tip.hide);
-      raceRect_new.exit().remove();
-      raceRect = raceRect_new.merge(raceRect_new);
+      raceRect.exit().remove();
+      raceRect = raceRect_new.merge(raceRect);
         raceRect.transition()
                 .duration(500)
                 .attr('y', 0)
