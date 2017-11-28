@@ -21,9 +21,37 @@ class CausesOfDeath {
          	        .attr("height",this.svgHeight)
      }
 
+     tooltip_render(tooltip_data) {
+         let text = "<h4 class ='yes' >" + tooltip_data.Cause_of_Death + "</h4>";
+         text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
+         //text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
+
+
+         return text;
+     }
+
 
 update(year){
   let codData = datamodel.getData("CauseOfDeath", "all",year)
+
+  let tip = d3.tip().attr('class', 'd3-tip')
+      .direction('nw')
+      .offset(function() {
+          return [0,0];
+      })
+      .html((d)=>{
+          // populate data in the following format
+          let tooltip_data = {
+              "Cause_of_Death": d.Cause_of_Death,
+              "deaths":d.Num_Deaths
+            }
+
+           // pass this as an argument to the tooltip_render function then,
+           // return the HTML content returned from that method.
+
+          return this.tooltip_render(tooltip_data);
+      });
+      this.svg.call(tip)
 
       let codDataSrt = codData.sort(function (a, b) {
         return b.Num_Deaths - a.Num_Deaths;
@@ -48,24 +76,12 @@ update(year){
       let causesRect = this.svg
                       .selectAll('rect')
                       .data(codDataSrt);
-        let causesRect_new = causesRect.enter().append('rect');
+        let causesRect_new = causesRect.enter().append('rect').on('mouseover', tip.show).on('mouseout', tip.hide);
         causesRect.exit().remove();
         causesRect = causesRect_new.merge(causesRect);
 
-        causesRect.on("mouseover", function(d) {
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            // div.html(d.Cause_of_Death + "<br/>" + "(" + d.Num_Deaths + ")")
-            div.html(d.Num_Deaths + " - " + d.Cause_of_Death)
-                .style("left", (d3.event.pageX-30) + "px")
-                .style("top", (d3.event.pageY) + "px");
-                })
-                .on("mouseout", function(d) {
-                    div.transition()
-                        .duration(500)
-                        .style("opacity", 0);
-                })
+        causesRect.transition()
+                  .duration(1000)
                   .attr('x', 0)
                   .attr('y', function(d,i) {
                           return (i*25);

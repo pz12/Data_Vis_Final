@@ -13,22 +13,53 @@ class Race {
                            .attr("height",this.svgHeight);
   }
 
+
+  tooltip_render(tooltip_data) {
+      let text = "<h2 class ='yes' >" + tooltip_data.race + "</h2>";
+      text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
+      text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
+
+
+      return text;
+  }
+
   update(year, state) {
     let raceData = datamodel.getData("Race", state, year);
 
     console.log(raceData);
 
+
+    let tip = d3.tip().attr('class', 'd3-tip')
+        .direction('ne')
+        .offset(function() {
+            return [0,0];
+        })
+        .html((d)=>{
+            // populate data in the following format
+            let tooltip_data = {
+                "race": d.Race,
+                "deaths":d.Deaths,
+                "rate" : d['Crude Rate']
+              }
+
+             // pass this as an argument to the tooltip_render function then,
+             // return the HTML content returned from that method.
+
+            return this.tooltip_render(tooltip_data);
+        });
+        this.svg.call(tip)
+
     //x.domain(raceData.map(function(d) { return d.Race; }));
     //y.domain([0, d3.max(raceData, function(d) { return d.frequency; })]);
 
     let yScale = d3.scaleLinear()
-                    .domain([0, d3.max(raceData, d => d.Deaths)])
-                    .range([0, this.svgHeight]);
+                    .domain([0, d3.max(raceData, d => parseInt(d.Deaths))])
+                    .range([this.margin.top, this.svgHeight]);
 
            // Create colorScale
             let colorScale = d3.scaleOrdinal()
                     .domain([0, d3.max(raceData, d => d.Race)])
-                    .range(["#ff8000", "#0080ff", "#8000ff", "#ff0040"]);
+                    .range([ "#41b6c4", "#238443", "#fc8d59", "#c2e699"]);
 
     // Define the div for the tooltip
      let div = d3.select("#ethnicity").append("div")
@@ -39,37 +70,25 @@ class Race {
     let raceRect = this.svg
                     .selectAll('rect')
                     .data(raceData);
-      let raceRect_new = raceRect.enter().append('rect');
+      let raceRect_new = raceRect.enter().append('rect').on('mouseover', tip.show).on('mouseout', tip.hide);
       raceRect.exit().remove();
       raceRect = raceRect_new.merge(raceRect);
         raceRect.transition()
-                .duration(3000)
+                .duration(1000)
                 .attr('y', 0)
                 .attr('x', function(d,i) {
                         return (i*35);
                 })
                 .attr('width', 30)
                 .attr('height', d => {
-                  return yScale(d.Deaths);
+                  let numdeath = parseInt(d.Deaths);
+                  return yScale(numdeath);
                 })
                 .attr('fill', function (d) {
                   return colorScale(d.Race);
                 });
+                // .attr("transform", "rotate(-90) translate(0,-1)");
 
-        raceRect.on("mouseover", function(d) {
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            // div.html(d.Cause_of_Death + "<br/>" + "(" + d.Num_Deaths + ")")
-            div.html(d.Race + " - " + d.Deaths)
-                .style("left", (d3.event.pageX-30) + "px")
-                .style("top", (d3.event.pageY) + "px");
-                })
-                .on("mouseout", function(d) {
-                    div.transition()
-                        .duration(500)
-                        .style("opacity", 0);
-                })
 
 
   }
