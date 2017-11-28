@@ -74,6 +74,7 @@ function pause() {
 }
 
 function allStates() {
+  pause();
   var year = current_year;
   d3.selectAll('.activeState').classed("activeState", false);
   console.log(year)
