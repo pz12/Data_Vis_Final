@@ -84,11 +84,11 @@ function pause() {
 
 function allStates() {
   var tempbool = timerBool;
-
+  updateCurrentState("all");
   pause();
   var year = current_year;
   d3.selectAll('.activeState').classed("activeState", false);
-  console.log(year)
+  console.log(year);
   weekdays.update(year, "all");
   race.update(year, "all");
   gender.update(year, "all");
