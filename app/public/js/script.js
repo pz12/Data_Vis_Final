@@ -8,7 +8,8 @@ let weekdays;
 let USMap;
 let race;
 let gender;
-var current_year;
+let current_year;
+let current_state = "all";
 
 d3.json("data/ProjectData.json", (d)=>{
   // console.log(d)
@@ -35,11 +36,15 @@ d3.json("data/ProjectData.json", (d)=>{
 
 function changeYear(year) {
   current_year = year;
-  weekdays.update(year, "all");
+  weekdays.update(year, current_state);
   USMap.update(year);
-  race.update(year, "all");
-  gender.update(year, "all");
+  race.update(year, current_state);
+  gender.update(year, current_state);
   CofDeath.update(year);
+}
+
+function updateCurrentState(state){
+    current_state = state;
 }
 
 function update(year, state) {

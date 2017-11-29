@@ -8,13 +8,13 @@ class USmap {
     this.svg = d3.select('#USmap')
               .append('svg')
               .attr('width', this.width)
-              .attr('height', this.height)
+              .attr('height', this.height);
 
     // LEGEND
     var legend_color = 'gray';
     var legend_y = 70;
     var tick_height = 10;
-    var tick_place = legend_y + tick_height
+    var tick_place = legend_y + tick_height;
     var legend_x_start = 350;
     var legend_width = 96; //equivalent to a crude rate of 40
     var legend_x_end = legend_x_start+legend_width;
@@ -25,28 +25,28 @@ class USmap {
             })
            .attr('stroke', legend_color)
            .attr('stroke-width', 2)
-           .attr('fill', 'none')
+           .attr('fill', 'none');
    this.svg.append('path')
            .attr('d', (d) => {
              return 'M'+legend_x_end+','+tick_place+'L'+legend_x_end+','+legend_y;
            })
           .attr('stroke', legend_color)
           .attr('stroke-width', 2)
-          .attr('fill', 'none')
+          .attr('fill', 'none');
     this.svg.append('path')
             .attr('d', (d) => {
               return 'M'+legend_x_start+','+tick_place+'L'+legend_x_start+','+legend_y;
             })
            .attr('stroke', legend_color)
            .attr('stroke-width', 2)
-           .attr('fill', 'none')
+           .attr('fill', 'none');
    this.svg.append('path')
            .attr('d', (d) => {
              return 'M'+halfway+','+tick_place+'L'+halfway+','+legend_y;
            })
           .attr('stroke', legend_color)
           .attr('stroke-width', 2)
-          .attr('fill', 'none')
+          .attr('fill', 'none');
     this.svg.append('text')
           .text('0')
           .attr('x', (d) => {
@@ -55,7 +55,7 @@ class USmap {
           .attr('y', (d) => {
             return tick_place+15;
           })
-          .attr('class', 'USmapLegendText')
+          .attr('class', 'USmapLegendText');
     this.svg.append('text')
           .text('20')
           .attr('x', (d) => {
@@ -64,7 +64,7 @@ class USmap {
           .attr('y', (d) => {
             return tick_place+15;
           })
-          .attr('class', 'USmapLegendText')
+          .attr('class', 'USmapLegendText');
     this.svg.append('text')
           .text('40')
           .attr('x', (d) => {
@@ -73,7 +73,7 @@ class USmap {
           .attr('y', (d) => {
             return tick_place+15;
           })
-          .attr('class', 'USmapLegendText')
+          .attr('class', 'USmapLegendText');
     this.svg.append('text')
           .text('Crude Rate (per 100,000)')
           .attr('x', (d) => {
@@ -101,7 +101,7 @@ class USmap {
     }
 
 update(year) {
-  let stateResults = datamodel.getData("Totals", "all",year)
+  let stateResults = datamodel.getData("Totals", "all",year);
   //Use this tool tip element to handle any hover over the chart
   let tip = d3.tip().attr('class', 'd3-tip')
       .direction('se')
@@ -114,14 +114,14 @@ update(year) {
               "state": d.State,
               "deaths":d.Deaths,
               "rate" : d['Crude Rate']
-            }
+            };
 
            // pass this as an argument to the tooltip_render function then,
            // return the HTML content returned from that method.
 
           return this.tooltip_render(tooltip_data);
       });
-      this.svg.call(tip)
+      this.svg.call(tip);
 
 let results;
 for(let i=0; i<stateResults.length; i++) {
@@ -140,25 +140,24 @@ let radiusScale = d3.scaleLinear()
           uschart.exit()
                 .transition()
                 .duration(500)
-                .remove()
-          uschart = uschart.enter().append('circle')
-                            .attr('class', 'tile')
-                            .on('mouseover', tip.show)
-                            .on('mouseout', tip.hide)
-                            .on('click', function(d) {
-                              weekdays.update(year, d.State);
-                              race.update(year, d.State);
-                              gender.update(year, d.State);
-                              var tempbool = timerBool;
-                              pause();
-                              d3.selectAll('.activeState').classed("activeState", false);
-                              d3.select(this).classed("activeState", true);
-                              if(tempbool==true) {
-                                play();
-                              }
-                            })
-                            .merge(uschart);
-          uschart.transition()
+                .remove();
+          uschart = uschart.enter().append('circle').merge(uschart);
+          uschart.attr('class', 'tile')
+              .on('mouseover', tip.show)
+              .on('mouseout', tip.hide)
+              .on('click', function(d) {
+                  weekdays.update(year, d.State);
+                  race.update(year, d.State);
+                  gender.update(year, d.State);
+                  updateCurrentState(d.State);
+                  var tempbool = timerBool;
+                  pause();
+                  d3.selectAll('.activeState').classed("activeState", false);
+                  d3.select(this).classed("activeState", true);
+                  if(tempbool==true) {
+                      play();
+                  }
+              }).transition()
                   .duration(500)
                   .attr('cx', (d) => {
                     return d.Space*70+25;
@@ -170,7 +169,7 @@ let radiusScale = d3.scaleLinear()
                     return radiusScale(d['Crude Rate']);
                   })
                   .attr('fill', 'red')
-                  .attr('stroke', 'black')
+                  .attr('stroke', 'black');
 
 
   // var line = d3.svg.line()
