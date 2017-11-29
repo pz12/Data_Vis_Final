@@ -142,6 +142,7 @@ input[type=range]:focus::-ms-fill-upper {
   cursor: pointer;
 }
 .activeState {
+  transition: fill ease-in-out .15s, fill ease-in-out .15s;
   fill: blue;
 }
 

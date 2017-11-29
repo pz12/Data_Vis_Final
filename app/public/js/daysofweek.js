@@ -17,15 +17,19 @@ class DaysOfWeek {
 
   update(year, state) {
     let daysData = datamodel.getData("DayOfTheWeek", state, year)
-    console.log(daysData)
       let radiusScale = d3.scaleLinear()
                           .domain([0, d3.max(daysData, d => d['Deaths'])])
                           .range([0,100]);
 
     let radius_mean = d3.mean(daysData, d => d['Deaths'])
-
+    var invalid_flag = false;
+    for(let j=0; j<daysData.length; j++) {
+      if(isNaN(daysData[j].Deaths)) invalid_flag = true;
+    }
     var line = d3.lineRadial()
-      .radius(function(d, i){ return radiusScale(d.deaths) ; })
+      .radius((d, i) => {
+        if(invalid_flag==true) return 0;
+        return radiusScale(d.deaths) ; })
       .angle(function(d){ return d.angle * (Math.PI/180) ; })
         // .curve(d3.curveLinear);
       .curve(d3.curveCardinalClosed);
@@ -60,18 +64,18 @@ class DaysOfWeek {
   daysData.forEach(function(d, i) {
     data.push({"deaths":parseInt(d.Deaths), "angle":angles[i]});
   })
-  let average = this.svg.select('circle').datum(radius_mean);
-  average.exit()
-      .transition()
-      .duration(500)
-      .remove()
-  // average = average.append('circle');
-average = average.enter().append('circle').merge(average);
+  let average = this.svg.selectAll('circle').data([radius_mean]);
+  let average_new = average.enter().append('circle');
+  average.exit().remove();
+  average = average_new.merge(average)
+
+
 average
   .transition()
        .duration(500)
-       .attr('r', () => {
-        return radiusScale(radius_mean)
+       .attr('r', (d) => {
+        if(isNaN(radiusScale(d))) return 0;
+        return radiusScale(d);
       })
     .attr('stroke', 'gray')
     .attr('stroke-width', 2)
@@ -84,28 +88,17 @@ average
       return this.h/2
     })
 
-    // let data = daysData;
-    // this.svg.selectAll('path').remove()
-    // var path = this.svg.append('path')
-    //   .datum(data)
-    //   .transition()
-    //   .duration(1000)
-    //   .attr('d', line)
-    //   .attr('stroke', 'green')
-    //   .attr('stroke-width', 3)
-    //   .attr('fill', 'none')
-    //   .attr('transform', 'translate(' + this.w/2 +','+ this.h/2 +')')
 
     let path = this.svg.selectAll('path')
                         .data([data]);
 
-  let path_new = path.enter().append('path')
+  let path_new = path.enter().append('path');
   path.exit().remove();
   path = path_new.merge(path);
 
   path
   .transition()
-  .duration(1000)
+  .duration(500)
   .attr('d', line)
       .attr('stroke', 'green')
       .attr('id','thisOne')
@@ -113,32 +106,55 @@ average
       .attr('fill', 'none')
       .attr('transform', 'translate(' + this.w/2 +','+ this.h/2 +')')
 
-      this.svg.append('text')
-        .text('Days of the Week (Incomplete)')
-        .attr('x', (d) => {
-          return this.w/2 - this.w/6;
-        })
-        .attr('y', 12)
-        .attr('class', 'DOWtext')
-      this.svg.append('text')
-        .text('(Total Deaths per Given Day)')
-        .attr('x', (d) => {
-          return this.w/2 - this.w/6+10;
-        })
-        .attr('y', 30)
-        .attr('class', 'DOWtextsmall')
+      // this.svg.append('text')
+      //   .text('Days of the Week (Incomplete)')
+      //   .attr('x', (d) => {
+      //     return this.w/2 - this.w/6;
+      //   })
+      //   .attr('y', 12)
+      //   .attr('class', 'DOWtext')
+      // this.svg.append('text')
+      //   .text('(Total Deaths per Given Day)')
+      //   .attr('x', (d) => {
+      //     return this.w/2 - this.w/6+10;
+      //   })
+      //   .attr('y', 30)
+      //   .attr('class', 'DOWtextsmall')
 
-    var average_line_start = this.h/2-radiusScale(radius_mean);
-    this.svg.append('path')
-            .attr('d', (d) => {
-              return 'M'+this.w/2+','+this.h/2+'L'+this.w/2+','+average_line_start;
+    let average_line_start
+    if(isNaN(radiusScale(radius_mean))) average_line_start = this.h/2;
+    else average_line_start = this.h/2-radiusScale(radius_mean);
+
+    let radius_line = this.svg.selectAll('line').data([radius_mean])
+    let radius_line_new = radius_line.enter().append('line')
+    radius_line.exit().remove();
+    radius_line = radius_line_new.merge(radius_line)
+
+        radius_line.transition()
+            .duration(500)
+            // .attr('d', (d) => {
+            //   return 'M'+this.w/2+','+this.h/2+'L'+this.w/2+','+average_line_start;
+            // })
+            .attr('x1', (d) => {
+              return this.w/2
+            })
+            .attr('x2', (d) => {
+              return this.w/2
+            })
+            .attr('y1', (d) => {
+              return this.h/2
+            })
+            .attr('y2', (d) => {
+              return average_line_start
             })
             .attr('stroke', 'gray')
             .attr('stroke-width', 2)
             .attr('fill', 'none')
+            // .classed('radiusline', true)
 
     this.svg.append('text')
             .text((d) => {
+              if(invalid_flag==true) return "";
               return Math.floor(radius_mean)
             })
             .attr('x', (d) => {
