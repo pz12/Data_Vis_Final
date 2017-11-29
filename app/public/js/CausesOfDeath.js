@@ -12,7 +12,7 @@ class CausesOfDeath {
      constructor(){
 
          this.margin = {top: 30, right: 20, bottom: 30, left: 50};
-         this.svgWidth = 600;
+         this.svgWidth = 400;
          this.svgHeight = 400;
 
          let divCausesChart = d3.select("#topTen");
