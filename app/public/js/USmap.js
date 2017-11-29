@@ -121,7 +121,7 @@ update(year) {
 
           return this.tooltip_render(tooltip_data);
       });
-      this.svg.call(tip);
+      this.svg.call(tip)
 
 let results;
 for(let i=0; i<stateResults.length; i++) {
@@ -137,27 +137,28 @@ let radiusScale = d3.scaleLinear()
 
   let uschart = this.svg.selectAll('circle')
                   .data(stateResults);
-          uschart.exit()
-                .transition()
-                .duration(500)
-                .remove();
-          uschart = uschart.enter().append('circle').merge(uschart);
-          uschart.attr('class', 'tile')
-              .on('mouseover', tip.show)
-              .on('mouseout', tip.hide)
-              .on('click', function(d) {
-                  weekdays.update(year, d.State);
-                  race.update(year, d.State);
-                  gender.update(year, d.State);
-                  updateCurrentState(d.State);
-                  var tempbool = timerBool;
-                  pause();
-                  d3.selectAll('.activeState').classed("activeState", false);
-                  d3.select(this).classed("activeState", true);
-                  if(tempbool==true) {
-                      play();
-                  }
-              }).transition()
+                  uschart.exit()
+                          .transition()
+                          .duration(500)
+                        .remove()
+                 uschart = uschart.enter().append('circle')
+                                    .attr('class', 'tile')
+                                    .on('mouseover', tip.show)
+                                   .on('mouseout', tip.hide)
+                                   .on('click', function(d) {
+                                   weekdays.update(year, d.State);
+                                       race.update(year, d.State);
+                                      gender.update(year, d.State);
+                                      var tempbool = timerBool;
+                                   pause();
+                                     d3.selectAll('.activeState').classed("activeState", false);
+                                      d3.select(this).classed("activeState", true);
+                                    if(tempbool==true) {
+                                      play();
+                                 }
+                                  })
+                                   .merge(uschart);
+                  uschart.transition()
                   .duration(500)
                   .attr('cx', (d) => {
                     return d.Space*70+25;

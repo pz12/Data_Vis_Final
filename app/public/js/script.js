@@ -67,6 +67,7 @@ function play() {
   if(d3.select('.activeState')['_groups'][0][0]) {
     state = d3.select('.activeState')['_groups'][0][0]['__data__'].State;
   }
+  console.log(state)
   myTimer = setInterval (function() {
        var b= d3.select("#rangeSlider");
        var t = (+b.property("value") + 1) % (+b.property("max") + 1);
