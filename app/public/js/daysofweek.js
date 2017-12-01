@@ -62,7 +62,13 @@ class DaysOfWeek {
           })
           .attr('class', 'DOWtext')
   daysData.forEach(function(d, i) {
-    data.push({"deaths":parseInt(d.Deaths), "angle":angles[i]});
+    if(isNaN(d.Deaths)) {
+      data.push({"deaths":0, "angle":angles[i]});
+    }
+    else {
+      data.push({"deaths":parseInt(d.Deaths), "angle":angles[i]});
+    }
+
   })
   let average = this.svg.selectAll('circle').data([radius_mean]);
   let average_new = average.enter().append('circle');

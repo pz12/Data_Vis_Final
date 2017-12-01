@@ -10,17 +10,20 @@
 }
 #daysOfWeekHeader {
   position:absolute;
-  left: 90px;
-  top: 570px;
+  left: 1000px;
+  top: 450px;
 }
 #daysOfWeeksub {
   position:absolute;
-  left: 90px;
-  top: 600px;
+  left: 1000px;
+  top: 470px;
   margin-bottom: 30px;
 }
 
 #raceTitle {
+  margin-bottom: 0px;
+}
+#raceTitlesub {
   margin-bottom: 0px;
 }
 #genderTitle {
