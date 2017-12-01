@@ -1,4 +1,5 @@
 #topTen {
-  float:right;
+  position:absolute;
+  left: 1050px;
   width: 25%;
 }
