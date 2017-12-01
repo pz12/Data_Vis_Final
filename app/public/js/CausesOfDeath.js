@@ -22,7 +22,7 @@ class CausesOfDeath {
      }
 
      tooltip_render(tooltip_data) {
-         let text = "<h4 class ='yes' >" + tooltip_data.Cause_of_Death + "</h4>";
+         let text = "<h4>" + tooltip_data.Cause_of_Death + "</h4>";
          text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
          //text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
 

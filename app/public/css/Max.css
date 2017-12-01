@@ -3,3 +3,15 @@
   left: 1300px;
   top:125px;
 }
+
+#genderTitle {
+  position:absolute;
+  left: 1430px;
+  top: 75px;
+}
+
+#genderTitlesub {
+  position:absolute;
+  left: 1400px;
+  top: 100px;
+}
