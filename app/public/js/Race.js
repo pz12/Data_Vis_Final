@@ -4,8 +4,8 @@ class Race {
   constructor() {
 
           this.margin = {top: 30, right: 20, bottom: 30, left: 50};
-          this.svgWidth = 200;
-          this.svgHeight = 300;
+          this.svgWidth = 300;
+          this.svgHeight = 400;
 
           let divRaceChart = d3.select("#ethnicity")
 
@@ -25,16 +25,16 @@ class Race {
         this.xAxisGroup = this.svg.append("g").attr("transform", `translate(0, ${this.svgHeight - this.bottomOffset})`);
 
         this.rateScale = d3.scaleLinear().domain([65, 0]).range([10, this.svgHeight - 30]);
-        this.yAxisGroup = this.svg.append("g").attr("transform", `translate(25, 0)`);
+        this.yAxisGroup = this.svg.append("g").attr("transform", `translate(30, 0)`);
         //Bar Formatting
         this.barWidth = 35;
 
         //Set up the axis
         let yAxis = d3.axisLeft(this.rateScale);
         let xAxis = d3.axisBottom(this.categoryScale);
-        this.xAxisGroup.call(xAxis).attr("transform","translate(45,275)" );
+        this.xAxisGroup.call(xAxis).attr("transform","translate(45,375)" );
         this.yAxisGroup.call(yAxis);
-        this.svg.selectAll("text").attr("font-size", 14);
+        this.svg.selectAll("text").attr("font-size", 18);
         }
 
 
@@ -50,7 +50,7 @@ class Race {
 
     let tip = d3.tip().attr('class', 'd3-tip')
     // .attr("transform","translate(0,0) scale(-1,-1)" )
-        .direction('se')
+        .direction('sw')
         .offset(function() {
             return [-65,0];
         })
@@ -94,9 +94,9 @@ class Race {
                 .duration(500)
                 .attr('y', 0)
                 .attr('x', function(d,i) {
-                        return (i*35);
+                        return (i*55);
                 })
-                .attr('width', 30)
+                .attr('width', 40)
                 .attr('height', d => {
                   let numdeath = parseInt(d['Crude Rate']);
                   if (isNaN(numdeath)) {
@@ -107,7 +107,7 @@ class Race {
                 .attr('fill', function (d) {
                   return colorScale(d.Race);
                 })
-                .attr("transform","translate(30,270) scale(1,-1)" );
+                .attr("transform","translate(42,370) scale(1,-1)" );
 
   }
 
