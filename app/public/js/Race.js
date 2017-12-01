@@ -46,9 +46,9 @@ class Race {
 
     let tip = d3.tip().attr('class', 'd3-tip')
     // .attr("transform","translate(0,0) scale(-1,-1)" )
-        .direction('s')
+        .direction('se')
         .offset(function() {
-            return [370,200];
+            return [-65,0];
         })
         .html((d)=>{
             // populate data in the following format
