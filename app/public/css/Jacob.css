@@ -5,31 +5,19 @@
 }
 #daysOfWeek {
   position:absolute;
-  margin-left: 925px;
+  margin-left: 960px;
   top:500px;
 }
 #daysOfWeekHeader {
   position:absolute;
-  left: 1000px;
+  left: 1040px;
   top: 450px;
 }
 #daysOfWeeksub {
   position:absolute;
-  left: 1000px;
-  top: 470px;
+  left: 1040px;
+  top: 475px;
   margin-bottom: 30px;
-}
-
-#raceTitle {
-  margin-bottom: 0px;
-}
-#raceTitlesub {
-  margin-bottom: 0px;
-}
-#genderTitle {
-  position:absolute;
-  left: 480px;
-  top: 565px;
 }
 
 #title {
@@ -169,6 +157,9 @@ input[type=range]:focus::-ms-fill-upper {
 .tooltip-title{
     font-size:18px;
     font-family: "Arial Black";
+}
+.d3-tip {
+  min-width:500px;
 }
 
 .USmapLegendText {

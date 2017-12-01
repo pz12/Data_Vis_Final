@@ -2,13 +2,13 @@
 class Gender {
 
   constructor() {
-      this.svgContainerHeight = 300;
+      this.svgContainerHeight = 320;
       this.genderDiv = d3.select("#gender").attr("height", this.svgContainerHeight);
-      this.svgContainerWidth = 340;
+      this.svgContainerWidth = 250;
       this.bottomSVGPadding = 20;
       this.leftSVGPadding = 20;
       this.topSVGPadding = 10;
-      this.bottomGPadding = 0;
+      this.bottomGPadding = 10;
       this.leftGPadding = 0;
       this.topGPadding = 0;
       this.svgContainer = this.genderDiv.append("svg");
@@ -28,12 +28,12 @@ class Gender {
       this.maleCenter = (this.gContainerWidth - this.leftGPadding) * .3333;
       this.femaleCenter = (this.gContainerWidth - this.leftGPadding) * .6666;
       this.maxRate = 50.;
-      this.rateScale = d3.scaleLinear().domain([50, 0]).range([this.gContainerHeight - this.bottomGPadding, 0]);
+      this.rateScale = d3.scaleLinear().domain([50, 0]).range([0, this.gContainerHeight - this.bottomGPadding]);
       this.categoryScale = d3.scaleOrdinal().domain(["Male", "Female"]).range([this.maleCenter, this.femaleCenter]);
-      this.maleColor = "#0E3AD6";
+      this.maleColor = "steelblue";
       this.femaleColor = "#D63877";
       this.colorScale = d3.scaleOrdinal().domain(["Male", "Female"]).range([this.maleColor, this.femaleColor]);
-      this.xAxisGroup = this.gContainer.append("g").attr("transform", `translate(0, ${this.gContainerHeight + 10})`);
+      this.xAxisGroup = this.gContainer.append("g").attr("transform", `translate(0, ${this.gContainerHeight - 10})`);
       this.yAxisGroup = this.gContainer.append("g").attr("transform", `translate(30, 0)`);
 
       //Bar Formatting
@@ -44,6 +44,21 @@ class Gender {
       let xAxis = d3.axisBottom(this.categoryScale);
       this.xAxisGroup.call(xAxis);
       this.yAxisGroup.call(yAxis);
+      this.gContainer.selectAll("text").attr("font-size", 18);
+
+      //Remove the axis lines
+      this.xAxisGroup.selectAll("line").remove();
+      this.xAxisGroup.selectAll("path").remove();
+
+      //Add Y-axis label
+      this.yAxisGroup.append("text").text("Deaths per 100k")
+          .attr("fill", "#000")
+          .attr("font-size", 17)
+          .attr("font-weight", 300)
+          .attr("transform", "translate(18, 60) rotate(-90)")
+          .attr("text-anchor", "middle");
+
+
   }
 
   update(year, state) {
@@ -52,14 +67,19 @@ class Gender {
       bars.exit().remove();
       bars = bars.enter().append("rect").merge(bars);
       bars.attr("width", this.barWidth)
-          .attr("height", d=>{
-              let height =  this.rateScale(+d["Crude Rate"]);
-              return height;
-          })
           .attr("fill", d=>this.colorScale(d.Gender))
           .attr("y", this.bottomGPadding)
           .attr("x", d =>{return this.categoryScale(d.Gender) - .5 * this.barWidth})
-          .attr("transform", `translate(0, ${this.gContainerHeight - this.bottomGPadding}) scale(1, -1)`);
+          .attr("transform", `translate(0, ${this.gContainerHeight}) scale(1, -1)`)
+          .transition()
+          .duration(500)
+          .attr("height", d=>{
+              let height =  this.rateScale(47.7 - +d["Crude Rate"]);
+              if (isNaN(height)){
+                  return 0;
+              }
+              return height;
+          });
 
   }
 

@@ -3,9 +3,29 @@
   left: 920px;
   width: 25%;
 }
+#topTentitle {
+  margin-left:120px;
+  margin-top:-5px;
+  margin-bottom: 3px;
+}
+#topTensub {
+  margin-top:-5px;
+  margin-bottom: 5px;
+  margin-left:140px;
+}
 
 #ethnicity {
   position:absolute;
   left: 1350px;
   top: 450px;
+}
+#raceTitle {
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+#raceTitlesub {
+  margin-top:-5px;
+  margin-bottom: 0px;
+  margin-left: 5px;
 }
