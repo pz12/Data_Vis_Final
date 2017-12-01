@@ -25,7 +25,7 @@ class Race {
         this.xAxisGroup = this.svg.append("g").attr("transform", `translate(0, ${this.svgHeight - this.bottomOffset})`);
 
         this.rateScale = d3.scaleLinear().domain([65, 0]).range([10, this.svgHeight - 30]);
-        this.yAxisGroup = this.svg.append("g").attr("transform", `translate(20, 0)`);
+        this.yAxisGroup = this.svg.append("g").attr("transform", `translate(25, 0)`);
         //Bar Formatting
         this.barWidth = 35;
 
@@ -34,6 +34,7 @@ class Race {
         let xAxis = d3.axisBottom(this.categoryScale);
         this.xAxisGroup.call(xAxis).attr("transform","translate(45,275)" );
         this.yAxisGroup.call(yAxis);
+        this.svg.selectAll("text").attr("font-size", 14);
         }
 
 
