@@ -1,7 +1,7 @@
 #topTen {
   position:absolute;
   left: 920px;
-  top: 95px;
+  top: 75px;
   width: 25%;
 }
 #topTentitle {
@@ -17,16 +17,16 @@
 
 #ethnicity {
   position:absolute;
-  left: 1350px;
-  top: 450px;
+  left: 1320px;
+  top: 430px;
 }
 #raceTitle {
   margin-bottom: 0px;
-  margin-left: 18px;
+  margin-left: 50px;
 }
 
 #raceTitlesub {
   margin-top:0px;
   margin-bottom: 5px;
-  margin-left: 30px;
+  margin-left: 65px;
 }

@@ -6,17 +6,17 @@
 #daysOfWeek {
   position:absolute;
   margin-left: 960px;
-  top:500px;
+  top:475px;
 }
 #daysOfWeekHeader {
   position:absolute;
   left: 1040px;
-  top: 450px;
+  top: 430px;
 }
 #daysOfWeeksub {
   position:absolute;
   left: 1040px;
-  top: 475px;
+  top: 455px;
   margin-bottom: 30px;
 }
 .text {
@@ -140,8 +140,9 @@ input[type=range]:focus::-ms-fill-upper {
     float: left;
     width: 50px;
     text-align: center;
-    color: #b2b2b2;
-    font-size: 14px;
+    color: #4d4b4b;
+    font-size: 16px;
+    font-family: sans-serif;
     cursor: pointer;
   }
 .range-labels::before {
@@ -161,9 +162,7 @@ input[type=range]:focus::-ms-fill-upper {
     font-size:18px;
     font-family: "Arial Black";
 }
-.d3-tip {
-  max-width:500px;
-}
+
 
 .USmapLegendText {
   font-family: "sans serif";

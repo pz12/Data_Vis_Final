@@ -35,7 +35,7 @@ update(year){
   let codData = datamodel.getData("CauseOfDeath", "all",year)
 
   let tip = d3.tip().attr('class', 'd3-tip')
-      .direction('nw')
+      .direction('w')
       .offset(function() {
           return [0,0];
       })

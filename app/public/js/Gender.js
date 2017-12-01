@@ -33,7 +33,7 @@ class Gender {
       this.maleColor = "steelblue";
       this.femaleColor = "#D63877";
       this.colorScale = d3.scaleOrdinal().domain(["Male", "Female"]).range([this.maleColor, this.femaleColor]);
-      this.xAxisGroup = this.gContainer.append("g").attr("transform", `translate(0, ${this.gContainerHeight - 10})`);
+      this.xAxisGroup = this.gContainer.append("g").attr("transform", `translate(0, ${this.gContainerHeight -5})`);
       this.yAxisGroup = this.gContainer.append("g").attr("transform", `translate(30, 0)`);
 
       //Bar Formatting
@@ -47,8 +47,8 @@ class Gender {
       this.gContainer.selectAll("text").attr("font-size", 18);
 
       //Remove the axis lines
-      this.xAxisGroup.selectAll("line").remove();
-      this.xAxisGroup.selectAll("path").remove();
+      // this.xAxisGroup.selectAll("line").remove();
+      // this.xAxisGroup.selectAll("path").remove();
 
       //Add Y-axis label
       // this.yAxisGroup.append("text").text("Deaths per 100k")
