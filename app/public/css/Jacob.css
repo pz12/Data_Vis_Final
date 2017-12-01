@@ -1,6 +1,22 @@
 #USmap {
-  width: 75%;
-  float:left;
+  position:absolute;
+  top:160px;
+  left:10px;
+}
+#daysOfWeek {
+  position:absolute;
+  top:650px;
+}
+#daysOfWeekHeader {
+  position:absolute;
+  left: 90px;
+  top: 620px;
+}
+#daysOfWeeksub {
+  position:absolute;
+  left: 90px;
+  top: 645px;
+  margin-bottom: 30px;
 }
 
 /*http://danielstern.ca/range.css/#/*/
@@ -147,7 +163,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #allStates {
-  background-color: #4274a2;
+  background-color: #bd3e3e;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

@@ -2,24 +2,39 @@
 class Gender {
 
   constructor() {
-      this.genderDiv = d3.select("#gender");
-      this.svgHeight = 340;
-      this.svgWidth = 340;
-      this.svg = this.genderDiv.append("svg");
-      this.svg.attr("height", this.svgHeight).attr("width", this.svgWidth);
+      this.svgContainerHeight = 340;
+      this.genderDiv = d3.select("#gender").attr("height", this.svgContainerHeight);
+      this.svgContainerWidth = 340;
+      this.bottomSVGPadding = 20;
+      this.leftSVGPadding = 20;
+      this.topSVGPadding = 10;
+      this.bottomGPadding = 0;
+      this.leftGPadding = 0;
+      this.topGPadding = 0;
+      this.svgContainer = this.genderDiv.append("svg");
+      this.svgContainer.attr("height", this.svgContainerHeight).attr("width", this.svgContainerWidth);
+      this.gContainerWidth = this.svgContainerWidth - this.leftSVGPadding;
+      this.gContainerHeight = this.svgContainerHeight - this.bottomSVGPadding - this.topSVGPadding;
+      this.gContainer = this.svgContainer.append("g")
+          .attr("transform", `translate(${this.leftSVGPadding}, ${this.topSVGPadding})`);
+
+  // .attr('height', this.gContainerHeight)
+  //         .attr("width", this.gContainerWidth)
+
+
+
 
       //Formatting and Scales
-      this.bottomOffset = 20;
-      this.maleCenter = this.svgWidth * .3333;
-      this.femaleCenter = this.svgWidth * .6666;
+      this.maleCenter = (this.gContainerWidth - this.leftGPadding) * .3333;
+      this.femaleCenter = (this.gContainerWidth - this.leftGPadding) * .6666;
       this.maxRate = 50.;
-      this.rateScale = d3.scaleLinear().domain([0, 50]).range([0, this.svgHeight - this.bottomOffset]);
+      this.rateScale = d3.scaleLinear().domain([50, 0]).range([0, this.gContainerHeight - this.bottomGPadding]);
       this.categoryScale = d3.scaleOrdinal().domain(["Male", "Female"]).range([this.maleCenter, this.femaleCenter]);
       this.maleColor = "#0E3AD6";
       this.femaleColor = "#D63877";
       this.colorScale = d3.scaleOrdinal().domain(["Male", "Female"]).range([this.maleColor, this.femaleColor]);
-      this.xAxisGroup = this.svg.append("g").attr("transform", `translate(0, ${this.svgHeight - this.bottomOffset})`);
-      this.yAxisGroup = this.svg.append("g");
+      this.xAxisGroup = this.gContainer.append("g").attr("transform", `translate(0, ${this.gContainerHeight + 10})`);
+      this.yAxisGroup = this.gContainer.append("g").attr("transform", `translate(30, 0)`);
 
       //Bar Formatting
       this.barWidth = 35;
@@ -33,7 +48,7 @@ class Gender {
 
   update(year, state) {
       let data = datamodel.getData("Gender", state, year);
-      let bars = this.svg.selectAll("rect").data(data);
+      let bars = this.gContainer.selectAll("rect").data(data);
       bars.exit().remove();
       bars = bars.enter().append("rect").merge(bars);
       bars.attr("width", this.barWidth)
@@ -42,9 +57,9 @@ class Gender {
               return height;
           })
           .attr("fill", d=>this.colorScale(d.Gender))
-          .attr("y", this.bottomOffset)
+          .attr("y", this.bottomGPadding)
           .attr("x", d =>{return this.categoryScale(d.Gender) - .5 * this.barWidth})
-          .attr("transform", `translate(0, ${this.svgHeight - this.bottomOffset}) scale(1, -1)`);
+          .attr("transform", `translate(0, ${this.gContainerHeight - this.bottomGPadding}) scale(1, -1)`);
 
   }
 
