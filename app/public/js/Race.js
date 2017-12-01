@@ -24,16 +24,17 @@ class Race {
         this.categoryScale = d3.scaleOrdinal().domain(["Native", "Asian", "Black", "White" ]).range([this.whiteCenter, this.blackCenter, this.asianCenter, this.nativeCenter]);
         this.xAxisGroup = this.svg.append("g").attr("transform", `translate(0, ${this.svgHeight - this.bottomOffset})`);
 
-        this.rateScale = d3.scaleLinear().domain([65, 0]).range([0, this.gContainerHeight - this.bottomGPadding]);
-        this.yAxisGroup = this.svg.append("g").attr("transform", `translate(30, 0)`);
+        this.rateScale = d3.scaleLinear().domain([65, 0]).range([10, this.svgHeight - 30]);
+        this.yAxisGroup = this.svg.append("g").attr("transform", `translate(25, 0)`);
         //Bar Formatting
         this.barWidth = 35;
 
         //Set up the axis
         let yAxis = d3.axisLeft(this.rateScale);
         let xAxis = d3.axisBottom(this.categoryScale);
-        this.xAxisGroup.call(xAxis).attr("transform","translate(45,270)" );
+        this.xAxisGroup.call(xAxis).attr("transform","translate(45,275)" );
         this.yAxisGroup.call(yAxis);
+        this.svg.selectAll("text").attr("font-size", 14);
         }
 
 
@@ -69,13 +70,13 @@ class Race {
         this.svg.call(tip)
 
     let yScale = d3.scaleLinear()
-                    .domain([0, d3.max(raceData, d => parseInt(d['Crude Rate']))])
+                    .domain([0, 65])
                     .range([this.margin.top, this.svgHeight-this.margin.bottom]);
 
            // Create colorScale
             let colorScale = d3.scaleOrdinal()
                     .domain([0, d3.max(raceData, d => d.Race)])
-                    .range([ "#41b6c4", "#238443", "#fc8d59", "#c2e699"]);
+                    .range([ "#41b6c4", "#238443", "#f9e814", "#c2e699"]);
 
     // Define the div for the tooltip
      let div = d3.select("#ethnicity").append("div")
@@ -106,7 +107,7 @@ class Race {
                 .attr('fill', function (d) {
                   return colorScale(d.Race);
                 })
-                .attr("transform","translate(30,260) scale(1,-1)" );
+                .attr("transform","translate(30,270) scale(1,-1)" );
 
   }
 
