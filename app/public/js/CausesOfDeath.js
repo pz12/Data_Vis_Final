@@ -81,7 +81,7 @@ update(year){
         causesRect = causesRect_new.merge(causesRect);
 
         causesRect.transition()
-                  .duration(1000)
+                  .duration(500)
                   .attr('x', 0)
                   .attr('y', function(d,i) {
                           return (i*25);
