@@ -6,14 +6,15 @@
   position:absolute;
   top:650px;
 }
-#daysOfWeek h3 {
+#daysOfWeekHeader {
   position:absolute;
   left: 50px;
 }
-#daysOfWeek p {
+#daysOfWeeksub {
   position:absolute;
   left: 50px;
   top: 20px;
+  margin-bottom: 30px;
 }
 
 /*http://danielstern.ca/range.css/#/*/
