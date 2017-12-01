@@ -4,7 +4,16 @@
 }
 #daysOfWeek {
   position:absolute;
-  top:600px;
+  top:650px;
+}
+#daysOfWeek h3 {
+  position:absolute;
+  left: 50px;
+}
+#daysOfWeek p {
+  position:absolute;
+  left: 50px;
+  top: 20px;
 }
 
 /*http://danielstern.ca/range.css/#/*/
