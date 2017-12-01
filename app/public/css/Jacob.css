@@ -5,7 +5,8 @@
 }
 #daysOfWeek {
   position:absolute;
-  top:630px;
+  margin-left: 925px;
+  top:500px;
 }
 #daysOfWeekHeader {
   position:absolute;
@@ -21,6 +22,11 @@
 
 #raceTitle {
   margin-bottom: 0px;
+}
+#genderTitle {
+  position:absolute;
+  left: 480px;
+  top: 565px;
 }
 
 #title {
@@ -175,6 +181,9 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #allStates {
+  position:absolute;
+  margin-left: 150px;
+  top: 40px;
   background-color: #bd3e3e;
   border-radius: 3px;
   -webkit-border-radius: 3px;

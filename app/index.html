@@ -33,8 +33,9 @@
         onChange="changeYear(this.value)" autocomplete="off"/>
         <img src="public/images/play.png" id="play_button" onclick="play()"/>
         <img src="public/images/pause.png" id="pause_button" onclick="pause()"/>
-        <span id="buttonWrapper"><button onclick="allStates()" id="allStates">All States</button></span>
+
     </div>
+
     <ul class="range-labels">
       <li>1999</li>
       <li>2000</li>
@@ -54,11 +55,12 @@
       <li>2014</li>
       <li>2015</li>
     </ul>
-    <div id="USmap"></div>
+    <div id="USmap"><button onclick="allStates()" id="allStates">All States</button></div>
     <div id="topTen"> <h2>Causes of death</h2> </div>
     <div id="bottomPanel">
       <h3 id="daysOfWeekHeader">Days of the Week</h3><p id="daysOfWeeksub">(Total deaths per day)</p>
       <div id="daysOfWeek"></div>
+      <h3 id="genderTitle">Gender</h3>
       <div id="gender"></div>
       <div id="ethnicity"> <h3 id="raceTitle">Race and Ethinicity</h3> </div>
     </div>
