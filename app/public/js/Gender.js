@@ -2,7 +2,7 @@
 class Gender {
 
   constructor() {
-      this.svgContainerHeight = 340;
+      this.svgContainerHeight = 300;
       this.genderDiv = d3.select("#gender").attr("height", this.svgContainerHeight);
       this.svgContainerWidth = 340;
       this.bottomSVGPadding = 20;
@@ -28,7 +28,7 @@ class Gender {
       this.maleCenter = (this.gContainerWidth - this.leftGPadding) * .3333;
       this.femaleCenter = (this.gContainerWidth - this.leftGPadding) * .6666;
       this.maxRate = 50.;
-      this.rateScale = d3.scaleLinear().domain([50, 0]).range([0, this.gContainerHeight - this.bottomGPadding]);
+      this.rateScale = d3.scaleLinear().domain([50, 0]).range([this.gContainerHeight - this.bottomGPadding, 0]);
       this.categoryScale = d3.scaleOrdinal().domain(["Male", "Female"]).range([this.maleCenter, this.femaleCenter]);
       this.maleColor = "#0E3AD6";
       this.femaleColor = "#D63877";
