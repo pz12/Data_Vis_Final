@@ -95,9 +95,9 @@ class Race {
                 .attr('width', 30)
                 .attr('height', d => {
                   let numdeath = parseInt(d['Crude Rate']);
-                  if (numdeath == NaN){
-                    return 0;
-                  }
+                  if (isNaN(numdeath)) {
+                     return 0;
+                   }
                   else return yScale(numdeath);
                 })
                 .attr('fill', function (d) {
