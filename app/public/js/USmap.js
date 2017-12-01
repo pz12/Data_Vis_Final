@@ -100,6 +100,7 @@ class USmap {
         return text;
     }
 
+
 update(year) {
   let stateResults = datamodel.getData("Totals", "all",year);
   //Use this tool tip element to handle any hover over the chart
@@ -122,6 +123,9 @@ update(year) {
           return this.tooltip_render(tooltip_data);
       });
       this.svg.call(tip)
+  let colorScale = d3.scaleLinear()
+          .domain([0, 20])
+          .range(["grey", "red"]);
 
 let results;
 for(let i=0; i<stateResults.length; i++) {
@@ -171,7 +175,10 @@ let radiusScale = d3.scaleLinear()
                   .attr('r', (d) => {
                     return radiusScale(d['Crude Rate']);
                   })
-                  .attr('fill', 'red')
+                  .attr('fill', (d) => {
+                    console.log(d)
+                    return colorScale(d['Crude Rate']);
+                  })
                   .attr('stroke', 'black');
 
 
