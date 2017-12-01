@@ -125,7 +125,7 @@ update(year) {
       this.svg.call(tip)
   let colorScale = d3.scaleLinear()
           .domain([0, 20])
-          .range(["white", "red"]);
+          .range(["white", "#FF1B00"]);
 
 let results;
 for(let i=0; i<stateResults.length; i++) {
