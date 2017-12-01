@@ -65,7 +65,7 @@ update(year){
       //         // Create colorScale
               let colorScale = d3.scaleLinear()
                       .domain([0, d3.max(codData, d => parseInt(d.Num_Deaths))])
-                      .range(["grey", "red"]);
+                      .range(["white", "red"]);
 
       // Define the div for the tooltip
       let div = d3.select("#topTen").append("div")
