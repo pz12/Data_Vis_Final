@@ -53,11 +53,11 @@ class Race {
 
       //Formatting and Scales
       this.bottomOffset = 300;
-      this.whiteCenter = this.svgWidth * .3333;
-      this.blackCenter = this.svgWidth * .6666;
-      this.asianCenter = this.svgWidth * 1.3333;
-      this.nativeCenter = this.svgWidth * 2.6666;
-      this.categoryScale = d3.scaleOrdinal().domain(["White", "Black", "Asian", "Native"]).range([this.whiteCenter, this.blackCenter, this.asianCenter, this.nativeCenter]);
+      this.whiteCenter = (this.svgWidth * .2)-this.margin.left;
+      this.blackCenter = (this.svgWidth * .4)-this.margin.left;
+      this.asianCenter = (this.svgWidth * .6)-this.margin.left;
+      this.nativeCenter = (this.svgWidth * .8)-this.margin.left;
+      this.categoryScale = d3.scaleOrdinal().domain(["Native", "Asian", "Black", "White" ]).range([this.whiteCenter, this.blackCenter, this.asianCenter, this.nativeCenter]);
       this.xAxisGroup = this.svg.append("g").attr("transform", `translate(0, ${this.svgHeight - this.bottomOffset})`);
 
       //Bar Formatting
@@ -66,8 +66,8 @@ class Race {
       //Set up the axis
       let yAxis = d3.axisLeft(this.rateScale);
       let xAxis = d3.axisBottom(this.categoryScale);
-      this.xAxisGroup.call(xAxis);
-      //this.yAxisGroup.call(yAxis);
+      this.xAxisGroup.call(xAxis).attr("transform","translate(45,270)" );
+
 
 //________________________________________
       //   //Create the Scale we will use for the Axis
@@ -99,7 +99,6 @@ class Race {
 
 
     let raceRect = this.svg
-                    .attr("transform","translate(0,0) scale(-1,-1)" )
                     .selectAll('rect')
                     .data(raceData);
       let raceRect_new = raceRect.enter().append('rect').on('mouseover', tip.show).on('mouseout', tip.hide);
@@ -114,14 +113,15 @@ class Race {
                 .attr('width', 30)
                 .attr('height', d => {
                   let numdeath = parseInt(d['Crude Rate']);
-                  return yScale(numdeath);
+                  if (numdeath == NaN){
+                    return 0;
+                  }
+                  else return yScale(numdeath);
                 })
                 .attr('fill', function (d) {
                   return colorScale(d.Race);
-                });
-                // .attr("transform", "rotate(-90) translate(0,-1)");
-
-
+                })
+                .attr("transform","translate(30,260) scale(1,-1)" );
 
   }
 
