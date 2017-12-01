@@ -19,6 +19,9 @@
   top: 475px;
   margin-bottom: 30px;
 }
+.text {
+  font-family: sans-serif;
+}
 
 #title {
   margin-top:0px;
@@ -159,7 +162,7 @@ input[type=range]:focus::-ms-fill-upper {
     font-family: "Arial Black";
 }
 .d3-tip {
-  min-width:500px;
+  max-width:500px;
 }
 
 .USmapLegendText {

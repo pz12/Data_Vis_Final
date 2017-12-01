@@ -5,7 +5,7 @@ class Race {
 
           this.margin = {top: 30, right: 20, bottom: 30, left: 50};
           this.svgWidth = 300;
-          this.svgHeight = 400;
+          this.svgHeight = 300;
 
           let divRaceChart = d3.select("#ethnicity")
 
@@ -32,9 +32,9 @@ class Race {
         //Set up the axis
         let yAxis = d3.axisLeft(this.rateScale);
         let xAxis = d3.axisBottom(this.categoryScale);
-        this.xAxisGroup.call(xAxis).attr("transform","translate(45,375)" );
+        this.xAxisGroup.call(xAxis).attr("transform","translate(45,275)" );
         this.yAxisGroup.call(yAxis);
-        this.svg.selectAll("text").attr("font-size", 18);
+        this.svg.selectAll("text").attr("font-size", 16);
         }
 
 
@@ -71,7 +71,7 @@ class Race {
 
     let yScale = d3.scaleLinear()
                     .domain([0, 65])
-                    .range([this.margin.top, this.svgHeight-this.margin.bottom]);
+                    .range([0, this.svgHeight - 30]);
 
            // Create colorScale
             let colorScale = d3.scaleOrdinal()
@@ -107,7 +107,7 @@ class Race {
                 .attr('fill', function (d) {
                   return colorScale(d.Race);
                 })
-                .attr("transform","translate(42,370) scale(1,-1)" );
+                .attr("transform","translate(42,270) scale(1,-1)" );
 
   }
 

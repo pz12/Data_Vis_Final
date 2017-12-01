@@ -51,21 +51,63 @@ class Gender {
       this.xAxisGroup.selectAll("path").remove();
 
       //Add Y-axis label
-      this.yAxisGroup.append("text").text("Deaths per 100k")
-          .attr("fill", "#000")
-          .attr("font-size", 17)
-          .attr("font-weight", 300)
-          .attr("transform", "translate(18, 60) rotate(-90)")
-          .attr("text-anchor", "middle");
+      // this.yAxisGroup.append("text").text("Deaths per 100k")
+      //     .attr("fill", "#000")
+      //     .attr("font-size", 17)
+      //     .attr("font-weight", 300)
+      //     .attr("transform", "translate(18, 60) rotate(-90)")
+      //     .attr("text-anchor", "middle");
 
 
   }
 
+  /**
+     * Renders the HTML content for tool tip.
+     *
+     * @param tooltip_data information that needs to be populated in the tool tip
+     * @return text HTML content for tool tip
+     */
+    tooltip_render(tooltip_data) {
+        let text = "<h2>" + tooltip_data.state + "</h2>";
+        text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
+        text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
+
+
+        return text;
+    }
+
+
   update(year, state) {
       let data = datamodel.getData("Gender", state, year);
+
+      //Use this tool tip element to handle any hover over the chart
+      let tip = d3.tip().attr('class', 'd3-tip')
+          .direction('nw')
+          .offset(function() {
+              return [0,0];
+          })
+          .html((d)=>{
+            console.log(d)
+              // populate data in the following format
+              let tooltip_data = {
+                  "state": d.Gender,
+                  "deaths":d.Deaths,
+                  "rate" : d['Crude Rate']
+                };
+
+               // pass this as an argument to the tooltip_render function then,
+               // return the HTML content returned from that method.
+
+              return this.tooltip_render(tooltip_data);
+          });
+          this.svgContainer.call(tip)
+
       let bars = this.gContainer.selectAll("rect").data(data);
       bars.exit().remove();
-      bars = bars.enter().append("rect").merge(bars);
+      bars = bars.enter().append("rect")
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide)
+        .merge(bars);
       bars.attr("width", this.barWidth)
           .attr("fill", d=>this.colorScale(d.Gender))
           .attr("y", this.bottomGPadding)
