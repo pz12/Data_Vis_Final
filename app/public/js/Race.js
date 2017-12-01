@@ -3,31 +3,29 @@ class Race {
 
   constructor() {
 
-    this.margin = {top: 30, right: 20, bottom: 30, left: 50};
-    this.svgWidth = 200;
-    this.svgHeight = 300;
+          this.margin = {top: 30, right: 20, bottom: 30, left: 50};
+          this.svgWidth = 200;
+          this.svgHeight = 300;
 
-    let divRaceChart = d3.select("#ethnicity")
+          let divRaceChart = d3.select("#ethnicity")
 
-    this.svg = divRaceChart.append("svg")
-                           .attr("width",this.svgWidth)
-                           .attr("height",this.svgHeight);
-  }
-
-
-  tooltip_render(tooltip_data) {
-      let text = "<h2 class ='yes' >" + tooltip_data.race + "</h2>";
-      text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
-      text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
+          this.svg = divRaceChart.append("svg")
+                                 .attr("width",this.svgWidth)
+                                 .attr("height",this.svgHeight);
+        }
 
 
-      return text;
-  }
+        tooltip_render(tooltip_data) {
+            let text = "<h2 class ='yes' >" + tooltip_data.race + "</h2>";
+            text +=  "<div>Deaths: " + tooltip_data.deaths+"</div>";
+            text += "<div>Rate per 100,000: " + tooltip_data.rate+"</div>";
 
-  update(year, state) {
+
+            return text;
+        }
+
+ update(year, state) {
     let raceData = datamodel.getData("Race", state, year);
-
-    console.log(raceData);
 
 
     let tip = d3.tip().attr('class', 'd3-tip')
@@ -51,12 +49,43 @@ class Race {
         });
         this.svg.call(tip)
 
+//________________________________________
+
+      //Formatting and Scales
+      this.bottomOffset = 300;
+      this.whiteCenter = this.svgWidth * .3333;
+      this.blackCenter = this.svgWidth * .6666;
+      this.asianCenter = this.svgWidth * 1.3333;
+      this.nativeCenter = this.svgWidth * 2.6666;
+      this.categoryScale = d3.scaleOrdinal().domain(["White", "Black", "Asian", "Native"]).range([this.whiteCenter, this.blackCenter, this.asianCenter, this.nativeCenter]);
+      this.xAxisGroup = this.svg.append("g").attr("transform", `translate(0, ${this.svgHeight - this.bottomOffset})`);
+
+      //Bar Formatting
+      this.barWidth = 35;
+
+      //Set up the axis
+      let yAxis = d3.axisLeft(this.rateScale);
+      let xAxis = d3.axisBottom(this.categoryScale);
+      this.xAxisGroup.call(xAxis);
+      //this.yAxisGroup.call(yAxis);
+
+//________________________________________
+      //   //Create the Scale we will use for the Axis
+      //   let axisScale = d3.scaleOrdinal()
+      //                    .domain(["White", "Black", "Asian", "Native"])
+      //                    .range([this.margin.left, this.svgWidth]);
+      //  //Create the Axis
+      //  let xAxis = d3.axisBottom().scale(this.axisScale);
+       //
+      //   //Create an SVG group Element for the Axis elements and call the xAxis function
+      //   let xAxisGroup = this.svg.append("g").call(xAxis);
+
     //x.domain(raceData.map(function(d) { return d.Race; }));
     //y.domain([0, d3.max(raceData, function(d) { return d.frequency; })]);
 
     let yScale = d3.scaleLinear()
-                    .domain([0, d3.max(raceData, d => parseInt(d.Deaths))])
-                    .range([this.margin.top, this.svgHeight]);
+                    .domain([0, d3.max(raceData, d => parseInt(d['Crude Rate']))])
+                    .range([this.margin.top, this.svgHeight-this.margin.bottom]);
 
            // Create colorScale
             let colorScale = d3.scaleOrdinal()
@@ -84,7 +113,7 @@ class Race {
                 })
                 .attr('width', 30)
                 .attr('height', d => {
-                  let numdeath = parseInt(d.Deaths);
+                  let numdeath = parseInt(d['Crude Rate']);
                   return yScale(numdeath);
                 })
                 .attr('fill', function (d) {

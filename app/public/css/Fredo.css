@@ -1,4 +1,11 @@
 #topTen {
-  float:right;
+  position:absolute;
+  left: 1050px;
   width: 25%;
+}
+
+#ethnicity {
+  position:absolute;
+  left: 700px;
+  top: 550px;
 }
