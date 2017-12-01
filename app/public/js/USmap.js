@@ -176,7 +176,6 @@ let radiusScale = d3.scaleLinear()
                     return radiusScale(d['Crude Rate']);
                   })
                   .attr('fill', (d) => {
-                    console.log(d)
                     return colorScale(d['Crude Rate']);
                   })
                   .attr('stroke', 'black');
