@@ -1,0 +1,10 @@
+Peer Assessment
+Max Taggart
+
+
+Self Assessment:
+I was less involved with the coding of the UI than Jacob or Fredo, however I contributed to its conceptualization and design. I was primarily responsible for wrangling the data and creating the data API that was used by all of the views.
+
+
+Teammate Assessment:
+I am stisfied with the contributions and attitudes of both of my teammates.
